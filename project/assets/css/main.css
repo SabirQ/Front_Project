@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: 0; }
+
+body {
+  color: #666666;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.custom-header__top {
+  background-color: #e3a51e;
+  color: white; }
+  .custom-header__top__container__row__item__lists__list__link {
+    color: white;
+    display: flex; }
+  .custom-header__top__container__row__item__lists__list__links {
+    display: none; }
+  .custom-header__top__container__row__item__lists--right {
+    display: flex;
+    align-items: center; }
