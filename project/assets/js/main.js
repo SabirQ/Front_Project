@@ -1,6 +1,9 @@
 window.onload=function(){
   $(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
+    $(".main-products__container__row__carousel").owlCarousel();
+  });
+  $(document).ready(function(){
+    $(".owl-theme main-top-seller__container__row__top-sellers__carousel").owlCarousel();
   });
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
@@ -20,6 +23,20 @@ window.onload=function(){
   const transparentSearchInput=document.querySelector(".transparent__body__search__input-btn");
   const carouselBtns=document.querySelectorAll("._cus-carousel__icon");
   const carouselContainer=document.querySelector(".main-carousel__container");
+  const header = document.querySelector(".custom-header__bottom");
+  var sticky = 270;
+
+function stickyHeader() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("_sticky");
+  }
+   else {
+    header.classList.remove("_sticky");
+  }
+};
+ window.onscroll = function() {stickyHeader()};
+
+
   carouselContainer.onmouseenter = function(){
     carouselBtns.forEach((btn)=>{
       btn.classList.add("_opacity-return")
@@ -118,7 +135,7 @@ window.onload=function(){
   }
   
 }
-$('.owl-carousel').owlCarousel({
+$('.main-products__container__row__carousel').owlCarousel({
   loop:true,
   margin:1,
   nav:true,
@@ -135,6 +152,26 @@ $('.owl-carousel').owlCarousel({
       },
       1200:{
         items:4
+    }
+  }
+})
+$('.main-top-seller__container__row__top-sellers__carousel').owlCarousel({
+  loop:true,
+  margin:1,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      
+      576:{
+          items:1
+      },
+      992:{
+          items:1
+      },
+      1200:{
+        items:2
     }
   }
 })
