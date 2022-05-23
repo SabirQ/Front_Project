@@ -1,4 +1,7 @@
 window.onload=function(){
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+  });
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   const menuBtn=document.querySelector("._menu-btn");
@@ -115,3 +118,24 @@ window.onload=function(){
   }
   
 }
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:1,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      
+      576:{
+          items:2
+      },
+      992:{
+          items:3
+      },
+      1200:{
+        items:4
+    }
+  }
+})
+
