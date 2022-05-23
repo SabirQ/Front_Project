@@ -1,5 +1,6 @@
 window.onload=function(){
-
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   const menuBtn=document.querySelector("._menu-btn");
   const closeMenuBtn=document.querySelector(".mobile-menu__container__close__btn");
   const transparentDiv=document.querySelector(".transparent__body");

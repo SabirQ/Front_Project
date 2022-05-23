@@ -877,7 +877,8 @@ ul {
                   color: #e3a51e;
                   background-color: #333333; }
         .main-carousel__container__row__column__carousel__prev {
-          opacity: 1; }
+          opacity: 1;
+          visibility: hidden; }
           .main-carousel__container__row__column__carousel__prev:hover {
             opacity: 1; }
           .main-carousel__container__row__column__carousel__prev__icon {
@@ -901,7 +902,8 @@ ul {
                 visibility: hidden !important;
                 opacity: 0 !important; } }
         .main-carousel__container__row__column__carousel__next {
-          opacity: 1; }
+          opacity: 1;
+          visibility: hidden; }
           .main-carousel__container__row__column__carousel__next:hover {
             opacity: 1; }
           .main-carousel__container__row__column__carousel__next__icon {
@@ -925,6 +927,61 @@ ul {
                 visibility: hidden !important;
                 opacity: 0 !important; } }
 
+.main-carousel__stickers-container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 540px; }
+  @media (min-width: 576px) {
+    .main-carousel__stickers-container {
+      min-width: 540px; } }
+  @media (max-width: 575px) {
+    .main-carousel__stickers-container {
+      padding: 0; } }
+  @media (min-width: 768px) {
+    .main-carousel__stickers-container {
+      min-width: 720px; } }
+  @media (min-width: 992px) {
+    .main-carousel__stickers-container {
+      min-width: 960px;
+      padding: 0; } }
+  @media (min-width: 1200px) {
+    .main-carousel__stickers-container {
+      max-width: 1200px; } }
+  .main-carousel__stickers-container__row-bottom {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto; }
+    .main-carousel__stickers-container__row-bottom__column {
+      max-width: 33.33%; }
+      @media (max-width: 991px) {
+        .main-carousel__stickers-container__row-bottom__column {
+          max-width: 100%;
+          padding: 0 !important; } }
+      .main-carousel__stickers-container__row-bottom__column:first-child div {
+        background-color: #fcedda; }
+      .main-carousel__stickers-container__row-bottom__column:last-child div {
+        background-color: #f7d8f9; }
+      .main-carousel__stickers-container__row-bottom__column:nth-child(2) div {
+        background-color: #f2fbcb; }
+      .main-carousel__stickers-container__row-bottom__column__sticker {
+        width: 100%;
+        padding: 30px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row; }
+        @media (max-width: 991px) {
+          .main-carousel__stickers-container__row-bottom__column__sticker {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; } }
+        .main-carousel__stickers-container__row-bottom__column__sticker__text {
+          padding-left: 20px; }
+          .main-carousel__stickers-container__row-bottom__column__sticker__text h5 {
+            margin-bottom: 5px; }
+          .main-carousel__stickers-container__row-bottom__column__sticker__text p {
+            margin-bottom: 5px; }
+
 ._unvisible-indicators {
   display: none; }
   @media (max-width: 991px) {
@@ -937,3 +994,47 @@ ul {
     width: 30px !important;
     border-radius: 10px !important;
     border: 1px solid transparent !important; }
+
+.product-prototype {
+  margin-left: 50px;
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+  border: 1px solid #e2e0e0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .product-prototype:hover {
+    border-color: #e3a51e; }
+  .product-prototype__info {
+    text-align: center; }
+  .product-prototype__buttons {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px; }
+    .product-prototype__buttons__btn-wishlist {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      position: absolute;
+      top: 100%;
+      left: 6%;
+      transform: translate(50%, -50%); }
+    .product-prototype__buttons__btn-chart {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .product-prototype__buttons__btn-view {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      position: absolute;
+      top: 100%;
+      right: 6%;
+      transform: translate(-50%, -50%); }
