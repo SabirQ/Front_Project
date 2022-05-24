@@ -1,0 +1,64 @@
+@mixin containerResponse{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 540px;
+    @media (min-width: 576px)
+    {
+        min-width: 540px;
+    }
+    @media (max-width: 575px)
+    {
+      padding: 0 15px;
+    }
+    @media (min-width: 768px)
+     {
+        min-width: 720px;
+    }
+    @media (min-width: 992px)
+     {
+        min-width: 960px;
+        padding: 0;
+    }
+    @media (min-width: 1200px)
+     {
+        max-width: 1200px;
+    }
+}
+@mixin rowResponse{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+@mixin noneBtn{
+ .owl-dots{
+    display: none;
+    }
+    .owl-nav{
+    display: none !important;
+    }
+}
+@mixin Monserrat($color: #666666, $size: 16px){
+ font-family: 'Montserrat', sans-serif;
+ font-size: $size;
+ color: $color;
+}
+
+@mixin centerXY{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin transition ($time : 0.3s){
+    transition: all $time linear;
+}
+
+@mixin hidden{
+opacity: 0;
+visibility: hidden;
+transition: all 0.3s linear;
+}
+@mixin visible{
+opacity: 1;
+visibility: visible;
+transition: all 0.3s linear;
+}

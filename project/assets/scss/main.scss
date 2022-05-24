@@ -21,6 +21,9 @@ a{
   color:$textColor;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
+  &:hover{
+    color: $main;
+  }
 }
 ul{
   padding: 0;
@@ -1043,6 +1046,7 @@ display: flex;
                 width: 100%;
                 height: 100%;
                 object-position: center center;
+
               }
               &__caption{
                 padding: 25px;
@@ -1219,31 +1223,7 @@ display: flex;
     }
   }
   &__stickers-container{
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 540px;
-    @media (min-width: 576px)
-    {
-        min-width: 540px;
-        
-    }
-    @media (max-width: 575px)
-    {
-      padding: 0 15px;
-    }
-    @media (min-width: 768px)
-     {
-        min-width: 720px;
-    }
-    @media (min-width: 992px)
-     {
-        min-width: 960px;
-        padding: 0;
-    }
-    @media (min-width: 1200px)
-     {
-        max-width: 1200px;
-    }
+    @include containerResponse;
     &__row-bottom{
       width: 100%;
       display: flex;
@@ -1333,17 +1313,15 @@ display: flex;
 min-width: 270px;
 max-height: 466px;
 min-height: 360px;
- margin-left: 50px;
+margin-left: 50px;
  position: relative;
  height: fit-content;
  width: fit-content;
  border: 1px solid $borderColor;
  border-radius: 4px;
  background-color: #fff;
- display: flex;
+ @include centerXY;
  flex-direction: column;
- align-items: center;
- justify-content: center;
  transition: all 0.2s linear;
  font-family: 'Montserrat', sans-serif;
  
@@ -1356,14 +1334,12 @@ min-height: 360px;
    }
    .product-prototype__buttons{
      &__btn-wishlist{
-      opacity: 1;
-      visibility: visible;
+      @include visible;
       top:100%;
       left: 15%;
       }
       &__btn-view{
-      opacity: 1;
-      visibility: visible;
+      @include visible;
       top:100%;
       right:15%;
       }
@@ -1383,8 +1359,7 @@ min-height: 360px;
     text-align: center;
     &__name{
       &__link{
-        font-family: 'Montserrat', sans-serif;
-        color: $listTitleColor;
+        @include Monserrat($listTitleColor,16px);
         font-weight: 500;
         transition: all 0.2s linear;
         &:hover{
@@ -1416,8 +1391,7 @@ min-height: 360px;
       }
     }
    &__btn-wishlist{
-    opacity: 0;
-    visibility: hidden;
+    @include hidden;
     width: 46px;
     height: 46px;
     border-radius: 50%;
@@ -1439,8 +1413,7 @@ min-height: 360px;
     z-index: 1;
     }
     &__btn-view{
-    opacity: 0;
-    visibility: hidden;
+    @include hidden;
     width: 46px;
     height: 46px;
     border-radius: 50%;
@@ -1465,34 +1438,9 @@ min-height: 360px;
     }
 
   &__container{
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 540px;
-    @media (min-width: 576px)
-    {
-        min-width: 540px;
-        
-    }
-    @media (max-width: 575px)
-    {
-      padding: 0 15px;
-    }
-    @media (min-width: 768px)
-     {
-        min-width: 720px;
-    }
-    @media (min-width: 992px)
-     {
-        min-width: 960px;
-        padding: 0;
-    }
-    @media (min-width: 1200px)
-     {
-        max-width: 1200px;
-    }
+   @include containerResponse;
     &__row{
-      margin: 0 auto;
-      padding: 0;
+      @include rowResponse;
       &__title{
         text-align: center;
         padding-bottom: 42px;
@@ -1510,12 +1458,10 @@ min-height: 360px;
         &:hover{
           .owl-nav{
             .owl-prev{
-              visibility: visible;
-              opacity: 1;
+              @include visible;
             }
             .owl-next{
-              visibility: visible;
-              opacity: 1;
+              @include visible;
             }
           }
             
@@ -1528,8 +1474,7 @@ min-height: 360px;
         }
         .owl-nav{
           .owl-prev{
-            visibility: hidden;
-            opacity: 0;
+            @include hidden;
             border-radius: 0;
             left: 2%;
             top: 44%;
@@ -1539,9 +1484,7 @@ min-height: 360px;
             height: 46px;
             width: 46px;
             color: $listTitleColor;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include centerXY;
             &:hover{
               color: #fff;
               background-color: $main !important;
@@ -1553,8 +1496,7 @@ min-height: 360px;
             }
           }
           .owl-next{
-            visibility: hidden;
-            opacity: 0;
+            @include hidden;
             border-radius: 0;
             position: absolute;
             right: 2%;
@@ -1564,9 +1506,7 @@ min-height: 360px;
             height: 46px;
             width: 46px;
             color: $listTitleColor;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include centerXY;
             &:hover{
               color: #fff;
               background-color: $main !important;
@@ -1626,31 +1566,7 @@ min-height: 360px;
 .main-discount{
   padding-bottom: 50px;
   &__container{
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 540px;
-    @media (min-width: 576px)
-    {
-        min-width: 540px;
-        
-    }
-    @media (max-width: 575px)
-    {
-      padding: 0 15px;
-    }
-    @media (min-width: 768px)
-     {
-        min-width: 720px;
-    }
-    @media (min-width: 992px)
-     {
-        min-width: 960px;
-        padding: 0;
-    }
-    @media (min-width: 1200px)
-     {
-        max-width: 1200px;
-    }
+    @include containerResponse;
     font-family: 'Montserrat', sans-serif;
     &__row{
       width: 100%;
@@ -1758,10 +1674,8 @@ min-height: 360px;
    height: fit-content;
    width: fit-content;
    background-color: #fff;
-   display: flex;
+   @include centerXY;
    flex-direction: row;
-   align-items: center;
-   justify-content: center;
    transition: all 0.2s linear;
    @media (max-width: 575px)
    {
@@ -1782,7 +1696,6 @@ min-height: 360px;
          transform: scale(1.2);
        }
      }
-  
    }
     &__image{
       overflow: hidden;
@@ -1823,9 +1736,7 @@ min-height: 360px;
       &__info{
         &__name{
           &__link{
-            font-size: 16px;
-            font-family: 'Montserrat', sans-serif;
-            color: $listTitleColor;
+            @include Monserrat($listTitleColor,16px);
             font-weight: 500;
             transition: all 0.2s linear;
             &:hover{
@@ -1867,35 +1778,9 @@ min-height: 360px;
  
  .main-top-seller{
    &__container{
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 540px;
-    @media (min-width: 576px)
-    {
-        min-width: 540px;
-        
-    }
-    @media (max-width: 575px)
-    {
-      padding: 0 15px;
-    }
-    @media (min-width: 768px)
-     {
-        min-width: 720px;
-    }
-    @media (min-width: 992px)
-     {
-        min-width: 960px;
-        padding: 0;
-    }
-    @media (min-width: 1200px)
-     {
-        max-width: 1200px;
-    }
+    @include containerResponse;
      &__row{
-      margin: 0 auto;
-      padding: 0;
-     width: 100%;
+       @include rowResponse;
        &__image{
          width: 100%;
         margin-bottom: 20px;
@@ -1936,6 +1821,7 @@ min-height: 360px;
 
          &__carousel{
            width: 100%;
+           @include noneBtn;
            .item{
              .product-prototype-reverse{
               @media (max-width: 575px)
@@ -1949,22 +1835,8 @@ min-height: 360px;
                {
                 margin-bottom: 40px;
               }
-
              }
            }
-          width: 100% ;
-          .owl-dots{
-            display: none;
-          }
-          .owl-nav{
-            display: none;
-            .owl-prev{
-              display: none;
-            }
-            .owl-next{
-              display: none;
-            }
-          }
          }
        }
      }
@@ -1975,19 +1847,20 @@ min-height: 360px;
 //section main-blogs starts//////////////////////////////////////////
 
  .blog-prototype{
-   font-family: 'Montserrat', sans-serif;
   &__image{
     width: 100%;
     &__img{
       width: 100%;
+      &:hover{
+        cursor: pointer;
+      }
     }
   }
   &__info{
+    padding-top: 15px;
     width: 100%;
     &__title{
-      font-family: 'Montserrat', sans-serif;
-      font-size: 18px;
-      color: $listTitleColor;
+      @include Monserrat($listTitleColor,18px);
       font-weight: 600;
       margin-bottom: 10px;
       transition: all 0.3s linear;
@@ -1996,60 +1869,27 @@ min-height: 360px;
       }
     }
     &__date{
-      font-size: 14px;
+      @include Monserrat( 0, 14px);
     }
     &__read-more{
       transition: all 0.3s linear;
-      font-size: 15px;
-      color: $listTitleColor;
-      font-family: 'Montserrat', sans-serif;
+      @include Monserrat($listTitleColor,15px);
       font-weight: 500;
       &:hover{
         color: $main;
       }
     }
   }
-
  }
 
 .main-blogs{
   &__container{
-    margin: 0 auto;
-    padding: 0 15px;
-    max-width: 540px;
-    @media (min-width: 576px)
-    {
-        min-width: 540px;
-    }
-    @media (max-width: 575px)
-    {
-      padding: 0 15px;
-    }
-    @media (min-width: 768px)
-     {
-        min-width: 720px;
-    }
-    @media (min-width: 992px)
-     {
-        min-width: 960px;
-        padding: 0;
-    }
-    @media (min-width: 1200px)
-     {
-        max-width: 1200px;
-    }
+    @include containerResponse;
     &__row{
-      margin: 0 auto;
-      padding: 0;
-      width: 100%;
+      @include rowResponse;
         &__carousel{
           width: 100%;
-          .owl-dots{
-            display: none;
-          }
-          .owl-nav{
-            display: none !important;
-          }
+          @include noneBtn;
         }
     }
     &__logo-row{
@@ -2063,7 +1903,7 @@ min-height: 360px;
               width: fit-content;
               height: fit-content;
               &__img{
-                opacity: 0.3;
+              opacity: 0.3;
               transition: all 0.3s linear;
               &:hover{
                 opacity: 1;
@@ -2083,4 +1923,111 @@ min-height: 360px;
     }
   }
 }
+
+.cus-footer{
+  width: 100%;
+  &__top{
+    width: 100%;
+    padding: 22px 0 62px 0;
+    @media (min-width:768px){
+      padding: 40px 0 80px 0;
+    }
+    background-color: #f0f0f0;
+    &__container{
+      @include containerResponse;
+      &__row{
+        @include rowResponse;
+        &__column{
+          padding-top: 40px;
+          &:first-child{
+            .cus-footer__top__container__row__column__list{
+              &__item{
+                
+               margin-bottom: 15px;
+             }
+            }
+          }
+          &:last-child{
+          padding-left: 15px;
+          @media (min-width:1200px){
+            padding-left: 100px;
+          }
+          }
+
+          &__title{
+            @include Monserrat($listTitleColor,18px);
+            font-weight: 600;
+            padding-bottom: 28px;
+            margin: 0;
+          }
+          &__list{
+            margin: 0;
+            padding: 0;
+            &__item{
+              margin-bottom: 5px;
+              &__link{
+                color: $listTitleColor;
+                @include transition(0.3s);
+                &:hover{
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &__bottom{
+    background-color:#E4E4E4;
+    padding: 20px 0;
+    &__container{
+      @include containerResponse;
+      &__row{
+        @include rowResponse;
+        flex-direction: row-reverse;
+        &__column{
+          display: flex;
+          justify-content: start;
+          &:first-child{
+            display: flex;
+            justify-content: end;
+            @media (max-width:767px){
+              justify-content:center;
+            }
+          }
+          @media (max-width:767px){
+            justify-content:center;
+          }
+
+          &__copyright{
+            font-size: 14px;
+            color: $textColor;
+            margin: 0;
+           
+            width: fit-content;
+            
+            i{
+              color: red;
+            }
+            &__link{
+              color: $main;
+              font-size: 14px;
+            }
+          }
+          &__link{
+            @include transition(0.3s);
+            margin-left: 20px;
+            font-size: 14px;
+            @media (max-width:768px){
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
 
