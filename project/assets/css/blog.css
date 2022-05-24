@@ -2,14 +2,14 @@
   background-color: rgba(245, 245, 245, 0.616); }
   .page-titles__container {
     margin: 0 auto;
+    padding: 0 15px;
     max-width: 540px; }
     @media (min-width: 576px) {
       .page-titles__container {
-        padding: 0 15px;
         min-width: 540px; } }
     @media (max-width: 575px) {
       .page-titles__container {
-        padding: 0; } }
+        padding: 0 15px; } }
     @media (min-width: 768px) {
       .page-titles__container {
         min-width: 720px; } }
@@ -32,6 +32,10 @@
         padding-top: 28px;
         padding-bottom: 35px;
         text-align: center; }
+        @media (max-width: 991px) {
+          .page-titles__container__row__column {
+            padding-left: 0 !important;
+            padding-right: 0 !important; } }
         @media (min-width: 768px) {
           .page-titles__container__row__column {
             padding-top: 55px;
@@ -61,14 +65,14 @@
       padding: 80px 0 80px 0; } }
   .blog-blogs__container {
     margin: 0 auto;
+    padding: 0 15px;
     max-width: 540px; }
     @media (min-width: 576px) {
       .blog-blogs__container {
-        padding: 0 15px;
         min-width: 540px; } }
     @media (max-width: 575px) {
       .blog-blogs__container {
-        padding: 0; } }
+        padding: 0 15px; } }
     @media (min-width: 768px) {
       .blog-blogs__container {
         min-width: 720px; } }
@@ -86,6 +90,10 @@
       width: 100%; }
       .blog-blogs__container__row .blog-prototype {
         margin-bottom: 25px; }
+        @media (max-width: 991px) {
+          .blog-blogs__container__row .blog-prototype {
+            padding-left: 0 !important;
+            padding-right: 0 !important; } }
 
 .pages-slides__row {
   margin: 0 auto;
@@ -97,6 +105,10 @@
     border: 1px solid #e2e0e0;
     border-radius: 1px;
     text-align: center; }
+    @media (max-width: 991px) {
+      .pages-slides__row__column {
+        padding-left: 0 !important;
+        padding-right: 0 !important; } }
     .pages-slides__row__column__btn {
       width: 40px;
       height: 40px;

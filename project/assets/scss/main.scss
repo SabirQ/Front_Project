@@ -1419,9 +1419,8 @@ display: flex;
 }
 
 .main-products{
-  @include pagesPadding;
   &__container{
-   @include container;
+   @include containerResponse;
     &__row{
       @include rowResponse;
       &__title{
@@ -1438,7 +1437,8 @@ display: flex;
         }
       }
       &__carousel{
-        
+        padding: 0 15px;
+        @include columnPadding;
         &:hover{
           .owl-nav{
             .owl-prev{
@@ -1501,9 +1501,7 @@ display: flex;
           }
         }
         .product-prototype{
-          margin: 0 auto 30px auto !important;
-         
-          
+          margin: 0 auto 70px auto !important;
         }
       }
     }
@@ -1625,13 +1623,13 @@ display: flex;
    @include centerXY;
    flex-direction: row;
    transition: all 0.2s linear;
-   @media (max-width: 575px)
+   @media (max-width: 479px)
    {
      display: flex;
      flex-direction: column;
      width: 100%;
    }
-   @media (min-width: 576px)
+   @media (min-width: 480px)
    {
      display: flex;
      flex-direction: row;
@@ -1649,11 +1647,11 @@ display: flex;
       overflow: hidden;
       height: fit-content;
       width: fit-content;
-      @media (max-width: 575px)
+      @media (max-width: 479px)
       {
         width: 100%;
       }
-      @media (min-width: 576px)
+      @media (min-width: 480px)
       {
         width: fit-content;
       }
@@ -1671,12 +1669,12 @@ display: flex;
       align-content: space-between;
       padding: 0 10px;
       font-family: 'Montserrat', sans-serif;
-      @media (max-width: 575px)
+      @media (max-width: 479px)
       {
         display: flex;
         width: 100%;
       }
-      @media (min-width: 576px)
+      @media (min-width: 480px)
       {
         display: flex;
         width: fit-content;
@@ -1722,8 +1720,6 @@ display: flex;
       }
     }
   }
-
- 
  .main-top-seller{
    &__container{
     @include containerResponse;
@@ -1732,6 +1728,7 @@ display: flex;
        &__image{
          width: 100%;
         margin-bottom: 20px;
+        @include columnPadding;
         @media (max-width: 575px)
         {
         }
@@ -1753,9 +1750,21 @@ display: flex;
         }
        }
        &__top-sellers{
+         padding: 0 15px !important;
+         @media (max-width:991px){
+          padding-right:0 !important;
+        }
         @media (min-width: 768px)
         {
          max-width: 60%;
+       }
+       @media (max-width: 767px)
+        {
+         padding-left: 0 !important;
+       }
+       @media (min-width: 768px)
+        {
+         padding-left: 30px !important;
        }
          
         @media (min-width: 992px)
@@ -1772,7 +1781,7 @@ display: flex;
            @include noneBtn;
            .item{
              .product-prototype-reverse{
-              @media (max-width: 575px)
+              @media (max-width: 479px)
               {
                 display: flex;
                 flex-direction: column;
@@ -1791,7 +1800,6 @@ display: flex;
    }
  }
 
- 
 //section main-blogs starts//////////////////////////////////////////
 
  .blog-prototype{
@@ -1838,6 +1846,8 @@ display: flex;
         &__carousel{
           width: 100%;
           @include noneBtn;
+          padding: 0 15px !important;
+          @include columnPadding;
         }
     }
     &__logo-row{
@@ -1846,6 +1856,8 @@ display: flex;
       width: 100%;
         &__carousel{
           width: 100%;
+          padding: 0 15px !important;
+          @include columnPadding;
           .item{
             ._logo{
               width: fit-content;
@@ -1886,6 +1898,7 @@ display: flex;
       &__row{
         @include rowResponse;
         &__column{
+          @include columnPadding;
           padding-top: 40px;
           &:first-child{
             .cus-footer__top__container__row__column__list{
@@ -1935,6 +1948,7 @@ display: flex;
         @include rowResponse;
         flex-direction: row-reverse;
         &__column{
+          @include columnPadding;
           display: flex;
           justify-content: start;
           &:first-child{

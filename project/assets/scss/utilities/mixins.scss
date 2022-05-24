@@ -24,17 +24,23 @@
         max-width: 1200px;
     }
 }
+@mixin columnPadding{
+    @media (max-width:991px){
+        padding-left: 0 !important;
+        padding-right:0 !important;
+    }
+}
 @mixin container{
     margin: 0 auto;
+    padding: 0 15px;
     max-width: 540px;
     @media (min-width: 576px)
     {
-        padding: 0 15px;
         min-width: 540px;
     }
     @media (max-width: 575px)
     {
-      padding: 0 ;
+      padding: 0 15px;
     }
     @media (min-width: 768px)
      {
