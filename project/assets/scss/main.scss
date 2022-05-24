@@ -1763,6 +1763,18 @@ min-height: 360px;
    align-items: center;
    justify-content: center;
    transition: all 0.2s linear;
+   @media (max-width: 575px)
+   {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+   }
+   @media (min-width: 576px)
+   {
+     display: flex;
+     flex-direction: row;
+     width: fit-content;
+   }
    
    &:hover{
      .product-prototype-reverse__image{
@@ -1776,8 +1788,19 @@ min-height: 360px;
       overflow: hidden;
       height: fit-content;
       width: fit-content;
+      @media (max-width: 575px)
+      {
+        width: 100%;
+      }
+      @media (min-width: 576px)
+      {
+        width: fit-content;
+      }
       &__img{
+        width: 100%;
+        object-fit: contain;
         transition: all 0.3s linear;
+
       }
     }
     &__description{
@@ -1787,6 +1810,16 @@ min-height: 360px;
       align-content: space-between;
       padding: 0 10px;
       font-family: 'Montserrat', sans-serif;
+      @media (max-width: 575px)
+      {
+        display: flex;
+        width: 100%;
+      }
+      @media (min-width: 576px)
+      {
+        display: flex;
+        width: fit-content;
+      }
       &__info{
         &__name{
           &__link{
@@ -1802,14 +1835,14 @@ min-height: 360px;
         }
         &__actual-price{
           color: $listTitleColor;
-          font-size: 16px !important;
+          font-size: 16px ;
         }
         &__old-price{
-          font-size: 16px !important;
+          font-size: 16px ;
         }
         &__stars{
           padding-top: 5px;
-          font-size: 12px !important;
+          font-size: 12px ;
           color: $main;
         }
       }
@@ -1864,72 +1897,62 @@ min-height: 360px;
       padding: 0;
      width: 100%;
        &__image{
-        margin-bottom: 20px;
          width: 100%;
-         
-         @media (min-width: 768px)
+        margin-bottom: 20px;
+        @media (max-width: 575px)
+        {
+        }
+        @media (min-width: 768px)
          {
-           
+          width: 40%;
         }
         @media (min-width: 992px)
          {
-          height: fit-content;
-          width: fit-content;
+          width: 40%;
         }
         @media (min-width: 1200px)
          {
-            
+           max-width:33.33%;
         }
-         &__img{
-           height: 100%;
-           width: 100%;
-           object-fit: cover;
-           @media (min-width: 768px)
-           {
-
-          }
-          @media (min-width: 992px)
-           {
-             object-fit: contain;
-          }
-          @media (min-width: 1200px)
-           {
-             
-          }
-
-         }
+        &__img{
+          width: 100%;
+          object-fit: contain;
+        }
        }
        &__top-sellers{
-       
-        
-         margin-bottom: 20px;
-         width: 100%;
-         margin-left: auto;
-         margin-right: auto;
-         height: fit-content !important;
-         @media (min-width: 768px)
-         {
-            
-        }
+        @media (min-width: 768px)
+        {
+         max-width: 60%;
+       }
+         
         @media (min-width: 992px)
+        {
+         max-width: 60%;
+       }
+       @media (min-width: 1200px)
          {
-          margin-left: 0;
-          margin-right: 0;
-          width: 50%;
-            max-height: 400px;
+           max-width: fit-content;
         }
-        @media (min-width: 1200px)
-         {
-          width: 66%;
-        }
-        .owl-stage{
 
-        }
          &__carousel{
-           height: 100%;
-          padding: 0 !important;
-          margin: 0 !important;
-          width: 100% !important;
+           width: 100%;
+           .item{
+             .product-prototype-reverse{
+              @media (max-width: 575px)
+              {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+              }
+               margin-bottom: 20px;
+               @media (min-width: 1200px)
+               {
+                margin-bottom: 40px;
+              }
+
+             }
+           }
+          width: 100% ;
           .owl-dots{
             display: none;
           }
@@ -1942,30 +1965,6 @@ min-height: 360px;
               display: none;
             }
           }
-          .owl-stage-outer{
-            .owl-stage{
-              .owl-item{
-                width: fit-content !important;
-                height: fit-content !important;
-                margin: 0 !important;
-                padding: 0 !important;
-              }
-            }
-          }
-           &__top-seller{
-             .product-prototype-reverse{
-               width: fit-content !important;
-               height: fit-content !important;
-               padding: 0 !important;
-               margin-bottom: 10px !important;
-               margin: 0 12px 30px 12px !important;
-               &__image{
-                 &__img{
-                   object-fit:contain !important;
-                 }
-               }
-             }
-           }
          }
        }
      }
@@ -2013,9 +2012,7 @@ min-height: 360px;
 
  }
 
-
 .main-blogs{
-  padding-bottom: 80px;
   &__container{
     margin: 0 auto;
     padding: 0 15px;
@@ -2044,9 +2041,38 @@ min-height: 360px;
     &__row{
       margin: 0 auto;
       padding: 0;
-     width: 100%;
+      width: 100%;
         &__carousel{
           width: 100%;
+          .owl-dots{
+            display: none;
+          }
+          .owl-nav{
+            display: none !important;
+          }
+        }
+    }
+    &__logo-row{
+      margin: 0 auto;
+      padding: 80px 0;
+      width: 100%;
+        &__carousel{
+          width: 100%;
+          .item{
+            ._logo{
+              width: fit-content;
+              height: fit-content;
+              &__img{
+                opacity: 0.3;
+              transition: all 0.3s linear;
+              &:hover{
+                opacity: 1;
+                cursor: pointer;
+              }
+              }
+              
+            }
+          }
           .owl-dots{
             display: none;
           }

@@ -8,6 +8,9 @@ window.onload=function(){
   $(document).ready(function(){
     $(".main-blogs__container__row__carousel").owlCarousel();
   });
+  $(document).ready(function(){
+    $(".main-blogs__container__logo-row__carousel").owlCarousel();
+  });
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   const menuBtn=document.querySelector("._menu-btn");
@@ -186,11 +189,27 @@ $('.main-blogs__container__row__carousel').owlCarousel({
       0:{
           items:1
       },
-      764:{
+      768:{
           items:2
       },
       1200:{
           items:3
+      }
+  }
+})
+$('.main-blogs__container__logo-row__carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      480:{
+        items:2
+    },
+      992:{
+          items:4
       }
   }
 })
