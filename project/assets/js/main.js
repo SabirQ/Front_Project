@@ -143,7 +143,7 @@ function stickyHeader() {
 }
 $('.main-products__container__row__carousel').owlCarousel({
   loop:true,
-  margin:1,
+  margin:30,
   nav:true,
   responsive:{
       0:{

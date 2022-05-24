@@ -1283,9 +1283,6 @@ display: flex;
               margin-bottom: 5px;
               font-size: 18px;
             }
-            p{
-            }
-  
           }
         }
       }
@@ -1310,14 +1307,8 @@ display: flex;
 }
 // section main-products starts//////////////////////////////////////////
 .product-prototype{
-
-min-width: 270px;
-max-height: 466px;
-min-height: 360px;
-margin-left: 50px;
  position: relative;
- height: fit-content;
- width: fit-content;
+ width: 100%;
  border: 1px solid $borderColor;
  border-radius: 4px;
  background-color: #fff;
@@ -1328,6 +1319,7 @@ margin-left: 50px;
  
  &:hover{
    border-color: $main;
+   cursor: pointer;
    .product-prototype__image{
      img{
        transform: scale(1.2);
@@ -1349,18 +1341,19 @@ margin-left: 50px;
  }
   &__image{
     overflow: hidden;
-    height: fit-content;
-    width: fit-content;
+    max-width: 100%;
     border-radius: 4px;
     &__img{
-      transition: all 0.3s linear;
+     max-width: 100%;
+     margin: 0 auto;
+     transition: all 0.3s linear;
     }
   }
   &__info{
     text-align: center;
     &__name{
       &__link{
-        @include Monserrat($listTitleColor,16px);
+        @include Monserrat($listTitleColor,18px);
         font-weight: 500;
         transition: all 0.2s linear;
         &:hover{
@@ -1371,9 +1364,6 @@ margin-left: 50px;
     &__actual-price{
       color: $listTitleColor;
       font-size: 18px;
-    }
-    &__old-price{
-
     }
   }
   &__buttons{
@@ -1426,20 +1416,12 @@ margin-left: 50px;
     }
 
   }
-
- 
-
 }
 
 .main-products{
-  padding: 80px 0;
-  @media (max-width: 768px)
-     {
-      padding: 62px 0;
-    }
-
+  @include pagesPadding;
   &__container{
-   @include containerResponse;
+   @include container;
     &__row{
       @include rowResponse;
       &__title{
@@ -1456,6 +1438,7 @@ margin-left: 50px;
         }
       }
       &__carousel{
+        
         &:hover{
           .owl-nav{
             .owl-prev{
@@ -1468,8 +1451,6 @@ margin-left: 50px;
             
         
         }
-        padding: 0 !important;
-        width: 100% !important;
         .owl-dots{
           display: none;
         }
@@ -1478,7 +1459,7 @@ margin-left: 50px;
             @include hidden;
             border-radius: 0;
             left: 2%;
-            top: 44%;
+            top: 48%;
             position: absolute;
             background-color:$inputColor !important;
             transition: all 0.2s linear;
@@ -1501,7 +1482,7 @@ margin-left: 50px;
             border-radius: 0;
             position: absolute;
             right: 2%;
-            top: 44%;
+            top: 48%;
             background-color:$inputColor !important;
             transition: all 0.2s linear;
             height: 46px;
@@ -1520,42 +1501,8 @@ margin-left: 50px;
           }
         }
         .product-prototype{
-          margin: 0 25px 30px 15px !important;
-          margin-bottom: 40px;
-          @media (min-width: 576px)
-          {
-            min-width: 45% !important;
-            padding: 0;
-            margin: 0 auto 30px auto !important;
-              
-          }
-          @media (max-width: 575px)
-          {
-            min-width: 95% !important;
-              padding: 0;
-              margin: 0 auto 30px auto !important;
-          }
-          
-          @media (min-width: 992px)
-           {
-              min-width: 33% !important;
-              padding: 0;
-              margin: 0 auto 30px auto !important;
-          }
-          @media (min-width: 1200px)
-           {
-              max-width: 1200px;
-          }
-        }
-        .owl-stage-outer{
-          
-          .active{
-            
-          }
-          .owl-item{
-            
-            
-          }
+          margin: 0 auto 30px auto !important;
+         
           
         }
       }
