@@ -1973,23 +1973,18 @@ min-height: 360px;
  }
 
  
-
+//section main-blogs starts//////////////////////////////////////////
 
  .blog-prototype{
-   max-width: 370px;
    font-family: 'Montserrat', sans-serif;
   &__image{
     width: 100%;
     &__img{
       width: 100%;
-      object-fit: contain;
     }
   }
   &__info{
     width: 100%;
-    height: fit-content;
-    
-    background-color: #f7d8f9;
     &__title{
       font-family: 'Montserrat', sans-serif;
       font-size: 18px;
@@ -2017,4 +2012,49 @@ min-height: 360px;
   }
 
  }
+
+
+.main-blogs{
+  padding-bottom: 80px;
+  &__container{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 540px;
+    @media (min-width: 576px)
+    {
+        min-width: 540px;
+    }
+    @media (max-width: 575px)
+    {
+      padding: 0 15px;
+    }
+    @media (min-width: 768px)
+     {
+        min-width: 720px;
+    }
+    @media (min-width: 992px)
+     {
+        min-width: 960px;
+        padding: 0;
+    }
+    @media (min-width: 1200px)
+     {
+        max-width: 1200px;
+    }
+    &__row{
+      margin: 0 auto;
+      padding: 0;
+     width: 100%;
+        &__carousel{
+          width: 100%;
+          .owl-dots{
+            display: none;
+          }
+          .owl-nav{
+            display: none !important;
+          }
+        }
+    }
+  }
+}
 

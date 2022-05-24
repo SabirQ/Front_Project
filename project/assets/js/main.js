@@ -3,7 +3,10 @@ window.onload=function(){
     $(".main-products__container__row__carousel").owlCarousel();
   });
   $(document).ready(function(){
-    $(".owl-theme main-top-seller__container__row__top-sellers__carousel").owlCarousel();
+    $(".main-top-seller__container__row__top-sellers__carousel").owlCarousel();
+  });
+  $(document).ready(function(){
+    $(".main-blogs__container__row__carousel").owlCarousel();
   });
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
@@ -173,6 +176,22 @@ $('.main-top-seller__container__row__top-sellers__carousel').owlCarousel({
       1200:{
         items:2
     }
+  }
+})
+$('.main-blogs__container__row__carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  responsive:{
+      0:{
+          items:1
+      },
+      764:{
+          items:2
+      },
+      1200:{
+          items:3
+      }
   }
 })
 
