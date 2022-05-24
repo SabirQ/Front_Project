@@ -24,6 +24,54 @@
         max-width: 1200px;
     }
 }
+@mixin container{
+    margin: 0 auto;
+    max-width: 540px;
+    @media (min-width: 576px)
+    {
+        padding: 0 15px;
+        min-width: 540px;
+    }
+    @media (max-width: 575px)
+    {
+      padding: 0 ;
+    }
+    @media (min-width: 768px)
+     {
+        min-width: 720px;
+    }
+    @media (min-width: 992px)
+     {
+        min-width: 960px;
+        padding: 0;
+    }
+    @media (min-width: 1200px)
+     {
+        max-width: 1200px;
+    }
+}
+@mixin pagesPadding{
+    padding: 62px 0 62px 0;
+    @media (min-width:768px){
+      padding: 80px 0 80px 0;
+    }
+}
+@mixin italicPlaceholder{
+    &::-webkit-input-placeholder {
+        font-style: italic;
+        font-size: 14px;
+       }
+         
+       &:-ms-input-placeholder {
+        font-style: italic;
+        font-size: 14px;
+       }
+         
+       &::placeholder {
+        font-style: italic;
+        font-size: 14px;
+       }
+}
 @mixin rowResponse{
     margin: 0 auto;
     padding: 0;

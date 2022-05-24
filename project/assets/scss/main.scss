@@ -1,4 +1,5 @@
-@import "pages/header.scss";
+@import "pages/blog.scss";
+@import "pages/contactus.scss";
 @import "utilities/mixins.scss";
 
 * {
@@ -1934,7 +1935,7 @@ margin-left: 50px;
     }
     background-color: #f0f0f0;
     &__container{
-      @include containerResponse;
+      @include container;
       &__row{
         @include rowResponse;
         &__column{
@@ -1982,7 +1983,7 @@ margin-left: 50px;
     background-color:#E4E4E4;
     padding: 20px 0;
     &__container{
-      @include containerResponse;
+      @include container;
       &__row{
         @include rowResponse;
         flex-direction: row-reverse;
