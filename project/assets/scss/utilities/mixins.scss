@@ -1,3 +1,4 @@
+
 @mixin containerResponse{
     margin: 0 auto;
     padding: 0 15px;
@@ -32,15 +33,16 @@
 }
 @mixin container{
     margin: 0 auto;
-    padding: 0 15px;
     max-width: 540px;
+    padding: 0;
     @media (min-width: 576px)
     {
+       
         min-width: 540px;
     }
     @media (max-width: 575px)
     {
-      padding: 0 15px;
+
     }
     @media (min-width: 768px)
      {
@@ -48,8 +50,9 @@
     }
     @media (min-width: 992px)
      {
+        padding: 0 12px;
         min-width: 960px;
-        padding: 0;
+        
     }
     @media (min-width: 1200px)
      {
