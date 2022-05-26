@@ -1,0 +1,42 @@
+@import "../utilities/colors.scss";
+@import "../utilities/mixins.scss";
+
+
+.shop{
+    @include pagesPadding;
+    &__container{
+        @include container;
+        &__row{
+            @include rowResponse;
+            &__column{
+                &__category{
+                    margin-bottom: 35px;
+                    &__title{
+                        @include Monserrat($listTitleColor,20px);
+                        font-weight: 500;
+                        margin-bottom: 10px;
+
+                    }
+                    &__type{
+                        ul{
+                            li{
+                                cursor: pointer;
+                                &:hover{
+                                    span{
+                                        color: $main;
+                                    }
+                                }
+                                span{
+                                    @include transition(0.3s);
+                                    color: $listTitleColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

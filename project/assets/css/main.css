@@ -917,7 +917,8 @@
               font-weight: 500;
               font-family: 'Montserrat', sans-serif;
               font-size: 16px;
-              color: #333333; }
+              color: #333333;
+              transition: all 0.3s linear; }
         .single-blog__container__row__column__category__title {
           font-family: 'Montserrat', sans-serif;
           font-size: 20px;
@@ -952,7 +953,8 @@
               color: #e3a51e;
               cursor: pointer; }
           .single-blog__container__row__column__category__list__item__link {
-            color: #333333; }
+            color: #333333;
+            transition: all 0.3s linear; }
         .single-blog__container__row__column__tags__title {
           font-family: 'Montserrat', sans-serif;
           font-size: 20px;
@@ -988,6 +990,48 @@
           .single-blog__container__row__column__tags__links__link:hover {
             background-color: #e3a51e;
             color: white; }
+
+.shop {
+  padding: 62px 0 62px 0; }
+  @media (min-width: 768px) {
+    .shop {
+      padding: 80px 0 80px 0; } }
+  .shop__container {
+    margin: 0 auto;
+    max-width: 540px;
+    padding: 0; }
+    @media (min-width: 576px) {
+      .shop__container {
+        min-width: 540px; } }
+    @media (min-width: 768px) {
+      .shop__container {
+        min-width: 720px; } }
+    @media (min-width: 992px) {
+      .shop__container {
+        padding: 0 12px;
+        min-width: 960px; } }
+    @media (min-width: 1200px) {
+      .shop__container {
+        max-width: 1200px; } }
+    .shop__container__row {
+      margin: 0 auto;
+      padding: 0;
+      width: 100%; }
+      .shop__container__row__column__category {
+        margin-bottom: 35px; }
+        .shop__container__row__column__category__title {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 20px;
+          color: #333333;
+          font-weight: 500;
+          margin-bottom: 10px; }
+        .shop__container__row__column__category__type ul li {
+          cursor: pointer; }
+          .shop__container__row__column__category__type ul li:hover span {
+            color: #e3a51e; }
+          .shop__container__row__column__category__type ul li span {
+            transition: all 0.3s linear;
+            color: #333333; }
 
 * {
   margin: 0;

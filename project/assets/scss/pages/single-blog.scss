@@ -313,6 +313,7 @@
                                     display: block;
                                     font-weight: 500;
                                     @include Monserrat($listTitleColor, 16px);
+                                    @include transition(0.3s);
                                 }
 
                             }
@@ -351,7 +352,7 @@
                             margin-bottom: 10px;
                             display: flex;
                             justify-content: space-between;
-                            @include transition(0.3s);
+                            @include transition(0.3s); 
                             &:hover{
                                 color: $main;
                                 a{
@@ -361,6 +362,7 @@
                             }
                             &__link{
                                 color: $listTitleColor;
+                                @include transition(0.3s);
                             }
                         }
                         &__type{
