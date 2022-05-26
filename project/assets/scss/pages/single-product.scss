@@ -11,16 +11,12 @@
                 padding: 0 15px;
                 &__zoom{
                     width: 100%;
-                    &__focus{
+                    &__focus{ border: 1px solid #e2e0e09b;
                         &__image{
-                            border: 1px solid #e2e0e09b;
-                            cursor: pointer;
                             
+                            cursor: pointer;
                             &__img{
                                width: 100%;
-                                position: relative;
-                                left: 0px;
-                                top: 0px;
                                 z-index:2;
                                 opacity: 1;
                                 overflow: hidden;

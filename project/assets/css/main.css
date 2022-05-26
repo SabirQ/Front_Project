@@ -325,17 +325,15 @@
         padding: 0 15px; }
         .single-product__container__row__column__zoom {
           width: 100%; }
-          .single-product__container__row__column__zoom__focus__image {
-            border: 1px solid #e2e0e09b;
-            cursor: pointer; }
-            .single-product__container__row__column__zoom__focus__image__img {
-              width: 100%;
-              position: relative;
-              left: 0px;
-              top: 0px;
-              z-index: 2;
-              opacity: 1;
-              overflow: hidden; }
+          .single-product__container__row__column__zoom__focus {
+            border: 1px solid #e2e0e09b; }
+            .single-product__container__row__column__zoom__focus__image {
+              cursor: pointer; }
+              .single-product__container__row__column__zoom__focus__image__img {
+                width: 100%;
+                z-index: 2;
+                opacity: 1;
+                overflow: hidden; }
           .single-product__container__row__column__zoom__nav .slick-list {
             padding: 0 !important;
             margin: 20px -5px; }
@@ -1086,6 +1084,51 @@ ul {
       .transparent__body__search__input-btn__btn i {
         font-size: 20px;
         margin-right: 10px; }
+
+.transparent__body__quick-view {
+  transition: all 0.3s linear;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  align-items: center; }
+  .transparent__body__quick-view__container {
+    position: relative;
+    margin: auto auto !important;
+    z-index: 4;
+    margin: 0;
+    padding: 20px 5px;
+    padding-bottom: 0;
+    background-color: white;
+    border-radius: 5px; }
+    @media (max-width: 575px) {
+      .transparent__body__quick-view__container {
+        max-width: 100% !important; } }
+    @media (max-width: 768px) {
+      .transparent__body__quick-view__container {
+        max-width: 500px; } }
+    @media (max-width: 991px) {
+      .transparent__body__quick-view__container {
+        width: 700px;
+        padding-bottom: 20px; } }
+    @media (min-width: 992px) {
+      .transparent__body__quick-view__container {
+        width: 800px; } }
+    .transparent__body__quick-view__container__close {
+      position: absolute;
+      right: 5px;
+      top: 0px;
+      background-color: transparent;
+      width: 30px;
+      height: 30px;
+      font-size: 22px;
+      z-index: 4; }
 
 ._transform-translate-x {
   transform: translateX(0) !important;

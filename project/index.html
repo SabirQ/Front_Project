@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -445,8 +451,133 @@
             </button>
         </div>
     </div>
+
     <!-- mobile menu starts -->
     <div class="transparent__body"></div>
+    <div class="transparent__body__quick-view">
+        <div class="transparent__body__quick-view__container">
+            <button class="transparent__body__quick-view__container__close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="row single-product__container__row">
+                <div class="col-lg-5 single-product__container__row__column">
+                    <div class="single-product__container__row__column__zoom">
+                        <div class="slider-for single-product__container__row__column__zoom__focus ">
+                            <div class="image-zoom col-12 single-product__container__row__column__zoom__focus__image"
+                                data-scale="1.6">
+                                <img target="_self"
+                                    class="dslc-lightbox-image image-zoom__img single-product__container__row__column__zoom__focus__image__img"
+                                    src="assets/images/zoom/product-details-img1.webp" alt="shoe">
+                            </div>
+                            <div class="image-zoom col-12 single-product__container__row__column__zoom__focus__image"
+                                data-scale="1.6">
+                                <img class="image-zoom__img single-product__container__row__column__zoom__focus__image__img"
+                                    src="assets/images/zoom/product-details-img2.webp" alt="shoe">
+                            </div>
+                            <div class="image-zoom col-12 single-product__container__row__column__zoom__focus__image"
+                                data-scale="1.6">
+                                <img class="image-zoom__img single-product__container__row__column__zoom__focus__image__img"
+                                    src="assets/images/zoom/product-details-img3.webp" alt="shoe">
+                            </div>
+                            <div class="image-zoom col-12 single-product__container__row__column__zoom__focus__image"
+                                data-scale="1.6">
+                                <img class="image-zoom__img single-product__container__row__column__zoom__focus__image__img"
+                                    src="assets/images/zoom/product-details-img4.webp" alt="shoe">
+                            </div>
+                        </div>
+                        <div class="slider-nav single-product__container__row__column__zoom__nav">
+                            <div class="col-3 single-product__container__row__column__zoom__nav__image">
+                                <img class="single-product__container__row__column__zoom__nav__image__img"
+                                    src="assets/images/zoom/product-details-img1.webp" alt="shoe1">
+                            </div>
+                            <div class="col-3 single-product__container__row__column__zoom__nav__image">
+                                <img class="single-product__container__row__column__zoom__nav__image__img"
+                                    src="assets/images/zoom/product-details-img2.webp" alt="shoe1">
+                            </div>
+                            <div class="col-3 single-product__container__row__column__zoom__nav__image">
+                                <img class="single-product__container__row__column__zoom__nav__image__img"
+                                    src="assets/images/zoom/product-details-img3.webp" alt="shoe1">
+                            </div>
+                            <div class="col-3 single-product__container__row__column__zoom__nav__image">
+                                <img class="single-product__container__row__column__zoom__nav__image__img"
+                                    src="assets/images/zoom/product-details-img4.webp" alt="shoe1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 single-product__container__row__column">
+                    <div class="single-product__container__row__column__info">
+                        <div class="single-product__container__row__column__info__text">
+                            <h3 class="single-product__container__row__column__info__text__title">
+                                Primitive Mens Premium Shoes
+                            </h3>
+                            <span class="single-product__container__row__column__info__text__review">
+                                Review(s)
+                            </span>
+                            <div class="single-product__container__row__column__info__text__prices">
+                                <span class="single-product__container__row__column__info__text__prices__actual-price">
+                                    $70.00
+                                </span>
+                                <span class="single-product__container__row__column__info__text__prices__old-price">
+                                    <del>$80.00</del>
+                                </span>
+                            </div>
+                            <p class="single-product__container__row__column__info__text__article">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                            </p>
+                        </div>
+                        <div class="single-product__container__row__column__info__values">
+                            <div class="single-product__container__row__column__info__values__count">
+                                <div class="plus-minus">
+                                    <button class="plus-minus__minus">-</button>
+                                    <input class="plus-minus__value" type="text" value="1">
+                                    <button class="plus-minus__plus">+</button>
+                                </div>
+                                <button class="custom-button">
+                                    <a href="cart.html" class="custom-button__link">
+                                        Add To Cart
+                                    </a>
+                                </button>
+                            </div>
+                            <div class="single-product__container__row__column__info__values__available">
+                                <h5 class="single-product__container__row__column__info__values__available__title">
+                                    Availability:
+                                </h5>
+                                <span class="single-product__container__row__column__info__values__available__stock">
+                                    In Stock
+                                </span>
+                            </div>
+                        </div>
+                        <div class="single-product__container__row__column__info__social-button">
+                            <h5 class="single-product__container__row__column__info__social-button__title">Share:
+                            </h5>
+                            <button class="single-product__container__row__column__info__social-button__btn">
+                                <a class="single-product__container__row__column__info__social-button__link" href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </button>
+                            <button class="single-product__container__row__column__info__social-button__btn">
+                                <a class="single-product__container__row__column__info__social-button__link" href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </button>
+                            <button class="single-product__container__row__column__info__social-button__btn">
+                                <a class="single-product__container__row__column__info__social-button__link" href="#">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </a>
+                            </button>
+                            <button class="single-product__container__row__column__info__social-button__btn">
+                                <a class="single-product__container__row__column__info__social-button__link" href="#">
+                                    <i class="fa-brands fa-google-plus-g"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="mobile-menu">
         <div class="mobile-menu__container">
             <div class="mobile-menu__container__close">
@@ -1089,7 +1220,7 @@
                                         <a href="#" class="product-prototype__info__name__link">
                                             Leather Mens shoes
                                         </a>
-    
+
                                     </h5>
                                     <span class="product-prototype__info__actual-price">
                                         $80.00
@@ -1115,7 +1246,7 @@
                                         <i class="fa-regular fa-eye"></i>
                                     </button>
                                 </div>
-    
+
                             </div>
                         </div>
                         <div class="item">
@@ -1154,7 +1285,7 @@
                                         <i class="fa-regular fa-eye"></i>
                                     </button>
                                 </div>
-    
+
                             </div>
                         </div>
                         <div class="item">
@@ -1193,7 +1324,7 @@
                                         <i class="fa-regular fa-eye"></i>
                                     </button>
                                 </div>
-    
+
                             </div>
                         </div>
                         <div class="item">
@@ -1232,8 +1363,8 @@
                                         <i class="fa-regular fa-eye"></i>
                                     </button>
                                 </div>
-    
-                            </div>  
+
+                            </div>
                         </div>
                         <div class="item">
                             <div class="product-prototype ">
@@ -1246,7 +1377,7 @@
                                         <a href="#" class="product-prototype__info__name__link">
                                             Leather Mens Slipper
                                         </a>
-    
+
                                     </h5>
                                     <span class="product-prototype__info__actual-price">
                                         $80.00
@@ -1272,7 +1403,7 @@
                                         <i class="fa-regular fa-eye"></i>
                                     </button>
                                 </div>
-    
+
                             </div>
                         </div>
                     </div>
@@ -1341,310 +1472,316 @@
                     <div class="col-lg-8 main-top-seller__container__row__top-sellers">
                         <div class="owl-carousel owl-theme main-top-seller__container__row__top-sellers__carousel">
                             <div class="item">
-                                    <div class="main-top-seller__container__row__top-sellers__carousel__top-seller">
-                                            <div class="product-prototype-reverse ">
-                                                <div class="product-prototype-reverse__image">
-                                                    <img src="assets/images/top-seller/pro-small-1.webp" alt="top-seller"
-                                                        class="product-prototype-reverse__image__img">
-                                                </div>
-                                                <div class="product-prototype-reverse__description">
-                                                    <div class="product-prototype-reverse__description__info">
-                                                        <h5 class="product-prototype-reverse__description__info__name">
-                                                            <a href="#"
-                                                                class="product-prototype-reverse__description__info__name__link">
-                                                                Quickiin Mens shoes
-                                                            </a>
-                                                        </h5>
-                                                        <span class="product-prototype-reverse__description__info__actual-price">
-                                                            $80.00
-                                                        </span>
-                                                        <del class="product-prototype-reverse__description__info__old-price">
-                                                            $70.00$
-                                                        </del>
-                                                        <p class="product-prototype-reverse__description__info__stars">
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                        </p>
-                                                    </div>
-                                                    <div class="product-prototype-reverse__description__buttons">
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-wishlist "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Wishlist">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                        </button>
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-chart "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Add To Chart">
-                                                            <i class="fa-solid fa-bag-shopping"></i>
-                                                        </button>
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-view "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Quick View">
-                                                            <i class="fa-regular fa-eye"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
+                                <div class="main-top-seller__container__row__top-sellers__carousel__top-seller">
+                                    <div class="product-prototype-reverse ">
+                                        <div class="product-prototype-reverse__image">
+                                            <img src="assets/images/top-seller/pro-small-1.webp" alt="top-seller"
+                                                class="product-prototype-reverse__image__img">
+                                        </div>
+                                        <div class="product-prototype-reverse__description">
+                                            <div class="product-prototype-reverse__description__info">
+                                                <h5 class="product-prototype-reverse__description__info__name">
+                                                    <a href="#"
+                                                        class="product-prototype-reverse__description__info__name__link">
+                                                        Quickiin Mens shoes
+                                                    </a>
+                                                </h5>
+                                                <span
+                                                    class="product-prototype-reverse__description__info__actual-price">
+                                                    $80.00
+                                                </span>
+                                                <del class="product-prototype-reverse__description__info__old-price">
+                                                    $70.00$
+                                                </del>
+                                                <p class="product-prototype-reverse__description__info__stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </p>
                                             </div>
-                                            <div class="product-prototype-reverse ">
-                                                <div class="product-prototype-reverse__image">
-                                                    <img src="assets/images/top-seller/pro-small-2.webp" alt="top-seller"
-                                                        class="product-prototype-reverse__image__img">
-                                                </div>
-                                                <div class="product-prototype-reverse__description">
-                                                    <div class="product-prototype-reverse__description__info">
-                                                        <h5 class="product-prototype-reverse__description__info__name">
-                                                            <a href="#"
-                                                                class="product-prototype-reverse__description__info__name__link">
-                                                                Quickiin Mens shoes
-                                                            </a>
-                                                        </h5>
-                                                        <span class="product-prototype-reverse__description__info__actual-price">
-                                                            $80.00
-                                                        </span>
-                                                        <del class="product-prototype-reverse__description__info__old-price">
-                                                            $70.00$
-                                                        </del>
-                                                        <p class="product-prototype-reverse__description__info__stars">
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                        </p>
-                                                    </div>
-                                                    <div class="product-prototype-reverse__description__buttons">
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-wishlist "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Wishlist">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                        </button>
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-chart "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Add To Chart">
-                                                            <i class="fa-solid fa-bag-shopping"></i>
-                                                        </button>
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-view "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Quick View">
-                                                            <i class="fa-regular fa-eye"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
+                                            <div class="product-prototype-reverse__description__buttons">
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-wishlist "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Wishlist">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-chart "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Add To Chart">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-view "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Quick View">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="product-prototype-reverse ">
+                                        <div class="product-prototype-reverse__image">
+                                            <img src="assets/images/top-seller/pro-small-2.webp" alt="top-seller"
+                                                class="product-prototype-reverse__image__img">
+                                        </div>
+                                        <div class="product-prototype-reverse__description">
+                                            <div class="product-prototype-reverse__description__info">
+                                                <h5 class="product-prototype-reverse__description__info__name">
+                                                    <a href="#"
+                                                        class="product-prototype-reverse__description__info__name__link">
+                                                        Quickiin Mens shoes
+                                                    </a>
+                                                </h5>
+                                                <span
+                                                    class="product-prototype-reverse__description__info__actual-price">
+                                                    $80.00
+                                                </span>
+                                                <del class="product-prototype-reverse__description__info__old-price">
+                                                    $70.00$
+                                                </del>
+                                                <p class="product-prototype-reverse__description__info__stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </p>
+                                            </div>
+                                            <div class="product-prototype-reverse__description__buttons">
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-wishlist "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Wishlist">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-chart "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Add To Chart">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-view "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Quick View">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="item">
-                                    <div class="main-top-seller__container__row__top-sellers__carousel__top-seller">
-                                            <div class="product-prototype-reverse ">
-                                                <div class="product-prototype-reverse__image">
-                                                    <img src="assets/images/top-seller/pro-small-3.webp" alt="top-seller"
-                                                        class="product-prototype-reverse__image__img">
-                                                </div>
-                                                <div class="product-prototype-reverse__description">
-                                                    <div class="product-prototype-reverse__description__info">
-                                                        <h5 class="product-prototype-reverse__description__info__name">
-                                                            <a href="#"
-                                                                class="product-prototype-reverse__description__info__name__link">
-                                                                Quickiin Mens shoes
-                                                            </a>
-                                                        </h5>
-                                                        <span class="product-prototype-reverse__description__info__actual-price">
-                                                            $80.00
-                                                        </span>
-                                                        <del class="product-prototype-reverse__description__info__old-price">
-                                                            $70.00$
-                                                        </del>
-                                                        <p class="product-prototype-reverse__description__info__stars">
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                        </p>
-                                                    </div>
-                                                    <div class="product-prototype-reverse__description__buttons">
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-wishlist "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Wishlist">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                        </button>
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-chart "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Add To Chart">
-                                                            <i class="fa-solid fa-bag-shopping"></i>
-                                                        </button>
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-view "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Quick View">
-                                                            <i class="fa-regular fa-eye"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
+                                <div class="main-top-seller__container__row__top-sellers__carousel__top-seller">
+                                    <div class="product-prototype-reverse ">
+                                        <div class="product-prototype-reverse__image">
+                                            <img src="assets/images/top-seller/pro-small-3.webp" alt="top-seller"
+                                                class="product-prototype-reverse__image__img">
+                                        </div>
+                                        <div class="product-prototype-reverse__description">
+                                            <div class="product-prototype-reverse__description__info">
+                                                <h5 class="product-prototype-reverse__description__info__name">
+                                                    <a href="#"
+                                                        class="product-prototype-reverse__description__info__name__link">
+                                                        Quickiin Mens shoes
+                                                    </a>
+                                                </h5>
+                                                <span
+                                                    class="product-prototype-reverse__description__info__actual-price">
+                                                    $80.00
+                                                </span>
+                                                <del class="product-prototype-reverse__description__info__old-price">
+                                                    $70.00$
+                                                </del>
+                                                <p class="product-prototype-reverse__description__info__stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </p>
                                             </div>
-                                            <div class="product-prototype-reverse ">
-                                                <div class="product-prototype-reverse__image">
-                                                    <img src="assets/images/top-seller/pro-small-4.webp" alt="top-seller"
-                                                        class="product-prototype-reverse__image__img">
-                                                </div>
-                                                <div class="product-prototype-reverse__description">
-                                                    <div class="product-prototype-reverse__description__info">
-                                                        <h5 class="product-prototype-reverse__description__info__name">
-                                                            <a href="#"
-                                                                class="product-prototype-reverse__description__info__name__link">
-                                                                Quickiin Mens shoes
-                                                            </a>
-                                                        </h5>
-                                                        <span class="product-prototype-reverse__description__info__actual-price">
-                                                            $80.00
-                                                        </span>
-                                                        <del class="product-prototype-reverse__description__info__old-price">
-                                                            $70.00$
-                                                        </del>
-                                                        <p class="product-prototype-reverse__description__info__stars">
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                        </p>
-                                                    </div>
-                                                    <div class="product-prototype-reverse__description__buttons">
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-wishlist "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Wishlist">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                        </button>
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-chart "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Add To Chart">
-                                                            <i class="fa-solid fa-bag-shopping"></i>
-                                                        </button>
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-view "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Quick View">
-                                                            <i class="fa-regular fa-eye"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
+                                            <div class="product-prototype-reverse__description__buttons">
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-wishlist "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Wishlist">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-chart "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Add To Chart">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-view "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Quick View">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
                                             </div>
-                                     </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-prototype-reverse ">
+                                        <div class="product-prototype-reverse__image">
+                                            <img src="assets/images/top-seller/pro-small-4.webp" alt="top-seller"
+                                                class="product-prototype-reverse__image__img">
+                                        </div>
+                                        <div class="product-prototype-reverse__description">
+                                            <div class="product-prototype-reverse__description__info">
+                                                <h5 class="product-prototype-reverse__description__info__name">
+                                                    <a href="#"
+                                                        class="product-prototype-reverse__description__info__name__link">
+                                                        Quickiin Mens shoes
+                                                    </a>
+                                                </h5>
+                                                <span
+                                                    class="product-prototype-reverse__description__info__actual-price">
+                                                    $80.00
+                                                </span>
+                                                <del class="product-prototype-reverse__description__info__old-price">
+                                                    $70.00$
+                                                </del>
+                                                <p class="product-prototype-reverse__description__info__stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </p>
+                                            </div>
+                                            <div class="product-prototype-reverse__description__buttons">
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-wishlist "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Wishlist">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-chart "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Add To Chart">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-view "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Quick View">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="item">
-                                    <div class="main-top-seller__container__row__top-sellers__carousel__top-seller">
-                                            <div class="product-prototype-reverse ">
-                                                <div class="product-prototype-reverse__image">
-                                                    <img src="assets/images/top-seller/pro-small-2.webp" alt="top-seller"
-                                                        class="product-prototype-reverse__image__img">
-                                                </div>
-                                                <div class="product-prototype-reverse__description">
-                                                    <div class="product-prototype-reverse__description__info">
-                                                        <h5 class="product-prototype-reverse__description__info__name">
-                                                            <a href="#"
-                                                                class="product-prototype-reverse__description__info__name__link">
-                                                                Quickiin Mens shoes
-                                                            </a>
-                                                        </h5>
-                                                        <span class="product-prototype-reverse__description__info__actual-price">
-                                                            $80.00
-                                                        </span>
-                                                        <del class="product-prototype-reverse__description__info__old-price">
-                                                            $70.00$
-                                                        </del>
-                                                        <p class="product-prototype-reverse__description__info__stars">
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                        </p>
-                                                    </div>
-                                                    <div class="product-prototype-reverse__description__buttons">
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-wishlist "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Wishlist">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                        </button>
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-chart "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Add To Chart">
-                                                            <i class="fa-solid fa-bag-shopping"></i>
-                                                        </button>
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-view "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Quick View">
-                                                            <i class="fa-regular fa-eye"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
+                                <div class="main-top-seller__container__row__top-sellers__carousel__top-seller">
+                                    <div class="product-prototype-reverse ">
+                                        <div class="product-prototype-reverse__image">
+                                            <img src="assets/images/top-seller/pro-small-2.webp" alt="top-seller"
+                                                class="product-prototype-reverse__image__img">
+                                        </div>
+                                        <div class="product-prototype-reverse__description">
+                                            <div class="product-prototype-reverse__description__info">
+                                                <h5 class="product-prototype-reverse__description__info__name">
+                                                    <a href="#"
+                                                        class="product-prototype-reverse__description__info__name__link">
+                                                        Quickiin Mens shoes
+                                                    </a>
+                                                </h5>
+                                                <span
+                                                    class="product-prototype-reverse__description__info__actual-price">
+                                                    $80.00
+                                                </span>
+                                                <del class="product-prototype-reverse__description__info__old-price">
+                                                    $70.00$
+                                                </del>
+                                                <p class="product-prototype-reverse__description__info__stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </p>
                                             </div>
-                                            <div class="product-prototype-reverse ">
-                                                <div class="product-prototype-reverse__image">
-                                                    <img src="assets/images/top-seller/pro-small-3.webp" alt="top-seller"
-                                                        class="product-prototype-reverse__image__img">
-                                                </div>
-                                                <div class="product-prototype-reverse__description">
-                                                    <div class="product-prototype-reverse__description__info">
-                                                        <h5 class="product-prototype-reverse__description__info__name">
-                                                            <a href="#"
-                                                                class="product-prototype-reverse__description__info__name__link">
-                                                                Quickiin Mens shoes
-                                                            </a>
-                                                        </h5>
-                                                        <span class="product-prototype-reverse__description__info__actual-price">
-                                                            $80.00
-                                                        </span>
-                                                        <del class="product-prototype-reverse__description__info__old-price">
-                                                            $70.00$
-                                                        </del>
-                                                        <p class="product-prototype-reverse__description__info__stars">
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                        </p>
-                                                    </div>
-                                                    <div class="product-prototype-reverse__description__buttons">
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-wishlist "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Wishlist">
-                                                            <i class="fa-regular fa-heart"></i>
-                                                        </button>
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-chart "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Add To Chart">
-                                                            <i class="fa-solid fa-bag-shopping"></i>
-                                                        </button>
-                                                        <button type="button"
-                                                            class="product-prototype-reverse__description__buttons__btn-view "
-                                                            data-bs-toggle="tooltip" data-bs-placement="top"
-                                                            data-bs-custom-class="custom-tooltip" title="Quick View">
-                                                            <i class="fa-regular fa-eye"></i>
-                                                        </button>
-                                                    </div>
-                                                </div>
+                                            <div class="product-prototype-reverse__description__buttons">
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-wishlist "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Wishlist">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-chart "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Add To Chart">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-view "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Quick View">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
                                             </div>
-                                     </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-prototype-reverse ">
+                                        <div class="product-prototype-reverse__image">
+                                            <img src="assets/images/top-seller/pro-small-3.webp" alt="top-seller"
+                                                class="product-prototype-reverse__image__img">
+                                        </div>
+                                        <div class="product-prototype-reverse__description">
+                                            <div class="product-prototype-reverse__description__info">
+                                                <h5 class="product-prototype-reverse__description__info__name">
+                                                    <a href="#"
+                                                        class="product-prototype-reverse__description__info__name__link">
+                                                        Quickiin Mens shoes
+                                                    </a>
+                                                </h5>
+                                                <span
+                                                    class="product-prototype-reverse__description__info__actual-price">
+                                                    $80.00
+                                                </span>
+                                                <del class="product-prototype-reverse__description__info__old-price">
+                                                    $70.00$
+                                                </del>
+                                                <p class="product-prototype-reverse__description__info__stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </p>
+                                            </div>
+                                            <div class="product-prototype-reverse__description__buttons">
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-wishlist "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Wishlist">
+                                                    <i class="fa-regular fa-heart"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-chart "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Add To Chart">
+                                                    <i class="fa-solid fa-bag-shopping"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="product-prototype-reverse__description__buttons__btn-view "
+                                                    data-bs-toggle="tooltip" data-bs-placement="top"
+                                                    data-bs-custom-class="custom-tooltip" title="Quick View">
+                                                    <i class="fa-regular fa-eye"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1656,124 +1793,124 @@
         <section id="main-blogs" class="main-blogs">
             <div class="container main-blogs__container">
                 <div class="row section-title-row">
-                            <div class="section-title-row__title">
-                                <h2>
-                                    Our Blog
-                                </h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing
-                                </p>
-                            </div>
-                </div>
-                <div class="row main-blogs__container__row">
-                        
-                    <div class="owl-carousel owl-theme main-blogs__container__row__carousel">
-                            <div class="item">
-                                    <div class=" blog-prototype">
-                                            <div class="blog-prototype__image">
-                                                <img class="blog-prototype__image__img" src="assets/images/blogs/blog-1.webp"
-                                                    alt="blog">
-                                            </div>
-                                            <div class="blog-prototype__info">
-                                                <a class="blog-prototype__info__title" href="#">
-                                                    Children Left Home Alone For 4 Days In TV Series Experiment
-                                                </a>
-                                                <p class="blog-prototype__info__date">
-                                                    <strong>By:</strong>Admin, <strong>On:</strong> 14.07.2029
-                                                </p>
-                                                <a class="blog-prototype__info__read-more" href="#">
-                                                    Read more...
-                                                </a>
-                                            </div>
-                                        </div>
-                            </div>
-                            <div class="item">
-                                    <div class=" blog-prototype">
-                                            <div class="blog-prototype__image">
-                                                <img class="blog-prototype__image__img" src="assets/images/blogs/blog-2.webp"
-                                                    alt="blog">
-                                            </div>
-                                            <div class="blog-prototype__info">
-                                                <a class="blog-prototype__info__title" href="#">
-                                                    Children Left Home Alone For 4 Days In TV Series Experiment
-                                                </a>
-                                                <p class="blog-prototype__info__date">
-                                                    <strong>By:</strong>Admin, <strong>On:</strong> 14.07.2029
-                                                </p>
-                                                <a class="blog-prototype__info__read-more" href="#">
-                                                    Read more...
-                                                </a>
-                                            </div>
-                                        </div>
-                            </div>
-                            <div class="item">
-                                    <div class=" blog-prototype">
-                                            <div class="blog-prototype__image">
-                                                <img class="blog-prototype__image__img" src="assets/images/blogs/blog-3.webp"
-                                                    alt="blog">
-                                            </div>
-                                            <div class="blog-prototype__info">
-                                                <a class="blog-prototype__info__title" href="#">
-                                                    Children Left Home Alone For 4 Days In TV Series Experiment
-                                                </a>
-                                                <p class="blog-prototype__info__date">
-                                                    <strong>By:</strong>Admin, <strong>On:</strong> 14.07.2029
-                                                </p>
-                                                <a class="blog-prototype__info__read-more" href="#">
-                                                    Read more...
-                                                </a>
-                                            </div>
-                                        </div>
-                            </div>
-                            <div class="item">
-                                    <div class=" blog-prototype">
-                                            <div class="blog-prototype__image">
-                                                <img class="blog-prototype__image__img" src="assets/images/blogs/blog-2.webp"
-                                                    alt="blog">
-                                            </div>
-                                            <div class="blog-prototype__info">
-                                                <a class="blog-prototype__info__title" href="#">
-                                                    Children Left Home Alone For 4 Days In TV Series Experiment
-                                                </a>
-                                                <p class="blog-prototype__info__date">
-                                                    <strong>By:</strong>Admin, <strong>On:</strong> 14.07.2029
-                                                </p>
-                                                <a class="blog-prototype__info__read-more" href="#">
-                                                    Read more...
-                                                </a>
-                                            </div>
-                                        </div>
-                            </div>
+                    <div class="section-title-row__title">
+                        <h2>
+                            Our Blog
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                        </p>
                     </div>
                 </div>
-                <div class="row main-blogs__container__logo-row">
-                        <div class="owl-carousel owl-theme main-blogs__container__logo-row__carousel">
-                            <div class="item">
-                                <div class="_logo">
-                                    <img src="assets/images/blogs/brand-logo/br1.webp" alt="logo" class="_logo__img">
+                <div class="row main-blogs__container__row">
+
+                    <div class="owl-carousel owl-theme main-blogs__container__row__carousel">
+                        <div class="item">
+                            <div class=" blog-prototype">
+                                <div class="blog-prototype__image">
+                                    <img class="blog-prototype__image__img" src="assets/images/blogs/blog-1.webp"
+                                        alt="blog">
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="_logo">
-                                    <img src="assets/images/blogs/brand-logo/br2.webp" alt="logo" class="_logo__img">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="_logo">
-                                    <img src="assets/images/blogs/brand-logo/br3.webp" alt="logo" class="_logo__img">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="_logo">
-                                    <img src="assets/images/blogs/brand-logo/br4.webp" alt="logo" class="_logo__img">
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="_logo">
-                                    <img src="assets/images/blogs/brand-logo/br1.webp" alt="logo" class="_logo__img">
+                                <div class="blog-prototype__info">
+                                    <a class="blog-prototype__info__title" href="#">
+                                        Children Left Home Alone For 4 Days In TV Series Experiment
+                                    </a>
+                                    <p class="blog-prototype__info__date">
+                                        <strong>By:</strong>Admin, <strong>On:</strong> 14.07.2029
+                                    </p>
+                                    <a class="blog-prototype__info__read-more" href="#">
+                                        Read more...
+                                    </a>
                                 </div>
                             </div>
                         </div>
+                        <div class="item">
+                            <div class=" blog-prototype">
+                                <div class="blog-prototype__image">
+                                    <img class="blog-prototype__image__img" src="assets/images/blogs/blog-2.webp"
+                                        alt="blog">
+                                </div>
+                                <div class="blog-prototype__info">
+                                    <a class="blog-prototype__info__title" href="#">
+                                        Children Left Home Alone For 4 Days In TV Series Experiment
+                                    </a>
+                                    <p class="blog-prototype__info__date">
+                                        <strong>By:</strong>Admin, <strong>On:</strong> 14.07.2029
+                                    </p>
+                                    <a class="blog-prototype__info__read-more" href="#">
+                                        Read more...
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class=" blog-prototype">
+                                <div class="blog-prototype__image">
+                                    <img class="blog-prototype__image__img" src="assets/images/blogs/blog-3.webp"
+                                        alt="blog">
+                                </div>
+                                <div class="blog-prototype__info">
+                                    <a class="blog-prototype__info__title" href="#">
+                                        Children Left Home Alone For 4 Days In TV Series Experiment
+                                    </a>
+                                    <p class="blog-prototype__info__date">
+                                        <strong>By:</strong>Admin, <strong>On:</strong> 14.07.2029
+                                    </p>
+                                    <a class="blog-prototype__info__read-more" href="#">
+                                        Read more...
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class=" blog-prototype">
+                                <div class="blog-prototype__image">
+                                    <img class="blog-prototype__image__img" src="assets/images/blogs/blog-2.webp"
+                                        alt="blog">
+                                </div>
+                                <div class="blog-prototype__info">
+                                    <a class="blog-prototype__info__title" href="#">
+                                        Children Left Home Alone For 4 Days In TV Series Experiment
+                                    </a>
+                                    <p class="blog-prototype__info__date">
+                                        <strong>By:</strong>Admin, <strong>On:</strong> 14.07.2029
+                                    </p>
+                                    <a class="blog-prototype__info__read-more" href="#">
+                                        Read more...
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row main-blogs__container__logo-row">
+                    <div class="owl-carousel owl-theme main-blogs__container__logo-row__carousel">
+                        <div class="item">
+                            <div class="_logo">
+                                <img src="assets/images/blogs/brand-logo/br1.webp" alt="logo" class="_logo__img">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="_logo">
+                                <img src="assets/images/blogs/brand-logo/br2.webp" alt="logo" class="_logo__img">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="_logo">
+                                <img src="assets/images/blogs/brand-logo/br3.webp" alt="logo" class="_logo__img">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="_logo">
+                                <img src="assets/images/blogs/brand-logo/br4.webp" alt="logo" class="_logo__img">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="_logo">
+                                <img src="assets/images/blogs/brand-logo/br1.webp" alt="logo" class="_logo__img">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1809,7 +1946,7 @@
                                         + 00 254 254565
                                     </a>
                                 </li>
-                            </ul>     
+                            </ul>
                         </div>
                         <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 cus-footer__top__container__row__column">
                             <h5 class="cus-footer__top__container__row__column__title">
@@ -1817,69 +1954,69 @@
                             </h5>
                             <ul class="cus-footer__top__container__row__column__list">
                                 <li class="cus-footer__top__container__row__column__list__item">
-                                     <a href="#" class="cus-footer__top__container__row__column__list__item__link">
+                                    <a href="#" class="cus-footer__top__container__row__column__list__item__link">
                                         Ecommerce
-                                     </a>
+                                    </a>
                                 </li>
                                 <li class="cus-footer__top__container__row__column__list__item">
-                                     <a href="#" class="cus-footer__top__container__row__column__list__item__link">
+                                    <a href="#" class="cus-footer__top__container__row__column__list__item__link">
                                         Shopify
-                                     </a>
+                                    </a>
                                 </li>
                                 <li class="cus-footer__top__container__row__column__list__item">
                                     <a href="#" class="cus-footer__top__container__row__column__list__item__link">
                                         Prestashop
-                                     </a>
+                                    </a>
                                 </li>
                                 <li class="cus-footer__top__container__row__column__list__item">
-                                     <a href="#" class="cus-footer__top__container__row__column__list__item__link">
+                                    <a href="#" class="cus-footer__top__container__row__column__list__item__link">
                                         Opencart
-                                     </a>
+                                    </a>
                                 </li>
                                 <li class="cus-footer__top__container__row__column__list__item">
-                                     <a href="#" class="cus-footer__top__container__row__column__list__item__link">
+                                    <a href="#" class="cus-footer__top__container__row__column__list__item__link">
                                         Magento
-                                     </a>
+                                    </a>
                                 </li>
                                 <li class="cus-footer__top__container__row__column__list__item">
-                                     <a href="#" class="cus-footer__top__container__row__column__list__item__link">
+                                    <a href="#" class="cus-footer__top__container__row__column__list__item__link">
                                         Jigoshop
-                                     </a>
+                                    </a>
                                 </li>
-                            </ul> 
+                            </ul>
                         </div>
                         <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 cus-footer__top__container__row__column">
                             <h5 class="cus-footer__top__container__row__column__title">
                                 Information
                             </h5>
                             <ul class="cus-footer__top__container__row__column__list">
-                                 <li class="cus-footer__top__container__row__column__list__item">
-                                     <a href="#" class="cus-footer__top__container__row__column__list__item__link">
-                                         Home
+                                <li class="cus-footer__top__container__row__column__list__item">
+                                    <a href="#" class="cus-footer__top__container__row__column__list__item__link">
+                                        Home
                                     </a>
                                 </li>
-                                 <li class="cus-footer__top__container__row__column__list__item">
-                                     <a href="#" class="cus-footer__top__container__row__column__list__item__link">
-                                         About Us
+                                <li class="cus-footer__top__container__row__column__list__item">
+                                    <a href="#" class="cus-footer__top__container__row__column__list__item__link">
+                                        About Us
                                     </a>
                                 </li>
-                                 <li class="cus-footer__top__container__row__column__list__item">
-                                     <a href="#" class="cus-footer__top__container__row__column__list__item__link">
-                                         Contact Us</a>
+                                <li class="cus-footer__top__container__row__column__list__item">
+                                    <a href="#" class="cus-footer__top__container__row__column__list__item__link">
+                                        Contact Us</a>
                                 </li>
-                                 <li class="cus-footer__top__container__row__column__list__item">
-                                     <a href="#" class="cus-footer__top__container__row__column__list__item__link">
-                                         Returns & Exchanges
+                                <li class="cus-footer__top__container__row__column__list__item">
+                                    <a href="#" class="cus-footer__top__container__row__column__list__item__link">
+                                        Returns & Exchanges
                                     </a>
                                 </li>
-                                 <li class="cus-footer__top__container__row__column__list__item">
-                                     <a href="#" class="cus-footer__top__container__row__column__list__item__link">
-                                         Shipping & Delivery
+                                <li class="cus-footer__top__container__row__column__list__item">
+                                    <a href="#" class="cus-footer__top__container__row__column__list__item__link">
+                                        Shipping & Delivery
                                     </a>
                                 </li>
-                                 <li class="cus-footer__top__container__row__column__list__item">
-                                     <a href="#" class="cus-footer__top__container__row__column__list__item__link">
-                                         Privacy Policy
+                                <li class="cus-footer__top__container__row__column__list__item">
+                                    <a href="#" class="cus-footer__top__container__row__column__list__item__link">
+                                        Privacy Policy
                                     </a>
                                 </li>
                             </ul>
@@ -1955,23 +2092,25 @@
         </div>
     </footer>
 
-
-
-
-
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.0/jquery-migrate.min.js"
+        integrity="sha512-QDsjSX1mStBIAnNXx31dyvw4wVdHjonOwrkaIhpiIlzqGUCdsI62MwQtHpJF+Npy2SmSlGSROoNWQCOFpqbsOg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="assets/js/pages/single-product.js"></script>
     <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

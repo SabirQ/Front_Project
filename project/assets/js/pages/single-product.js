@@ -1,7 +1,7 @@
-window.onload=function(){
-    const infoBtns=document.querySelectorAll(".single-product__container__info-row__column__buttons__button");
-    const infoContainer=document.querySelectorAll(".single-product__container__info-row__column__container__desk div");
 
+    const infoBtns=document.querySelectorAll(".single-product__container__info-row__column__buttons__button");
+    const infoContainer=document.querySelectorAll(".single-product__container__info-row__column__container__desk > div");
+   
     for (let i = 0; i < infoBtns.length; i++) {
         infoBtns[i].onclick=function(){
          
@@ -14,4 +14,3 @@ window.onload=function(){
           
         }
       }
-}

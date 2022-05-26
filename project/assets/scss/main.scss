@@ -615,6 +615,68 @@ display: flex;
 
   
 }
+
+.transparent__body__quick-view{
+ 
+  transition: all 0.3s linear;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color:$transparent;
+  position: fixed;
+  padding:20px;
+ 
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  
+ &__container{
+   position: relative;
+  margin: auto auto !important;
+   z-index: 4;
+   margin: 0;
+  padding: 20px 5px;
+  padding-bottom: 0;
+  background-color: white;
+  border-radius: 5px;
+ 
+  @media (max-width: 575px)
+  {
+    max-width: 100% !important;
+  }
+  @media (max-width: 768px)
+   {
+      max-width: 500px;
+  }
+  @media (max-width: 991px)
+   {
+      width: 700px;
+      
+      padding-bottom: 20px;
+  }
+  @media (min-width: 992px)
+   {
+      width: 800px;
+
+  }
+
+  &__close{
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    z-index: 4;
+  }
+
+  
+  
+ }
+}
 ._transform-translate-x{
   transform: translateX(0) !important;
   transition: all 0.3s linear;
