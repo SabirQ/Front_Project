@@ -37,7 +37,6 @@ window.onload=function(){
   const carouselContainer=document.querySelector(".main-carousel__container");
   const header = document.querySelector(".custom-header__bottom");
   var sticky = 270;
-  const closest = quickContainer.closest(".transparent__body__quick-view");
 
   for (let i = 0; i < quickBtns.length; i++) {
     quickBtns[i].onclick=function(e){
@@ -51,10 +50,12 @@ window.onload=function(){
   //   transparentQuickDiv.classList.remove("_opacity-return");
   //   quickContainer.classList.remove("_transform-translate-y");
   // }
+  if(document.body.contains(document.querySelector(".transparent__body__quick-view__container__close"))){
   closeQuickBtn.onclick=function(){
     transparentQuickDiv.classList.remove("_opacity-return");
     quickContainer.classList.remove("_transform-translate-y");
   }
+}
 
 function stickyHeader() {
   if (window.pageYOffset > sticky) {

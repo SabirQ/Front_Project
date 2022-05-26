@@ -68,17 +68,20 @@
 @mixin italicPlaceholder{
     &::-webkit-input-placeholder {
         font-style: italic;
-        font-size: 14px;
+        font-size: 13px;
+        color: rgba(107, 107, 107, 0.603);
        }
          
        &:-ms-input-placeholder {
         font-style: italic;
-        font-size: 14px;
+        font-size: 13px;
+        color: rgba(107, 107, 107, 0.603);
        }
          
        &::placeholder {
         font-style: italic;
-        font-size: 14px;
+        font-size: 13px;
+        color: rgba(107, 107, 107, 0.603);
        }
 }
 @mixin rowResponse{
