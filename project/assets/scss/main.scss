@@ -1401,12 +1401,12 @@ display: flex;
      &__btn-wishlist{
       @include visible;
       top:100%;
-      left: 15%;
+      left: 50px;
       }
       &__btn-view{
       @include visible;
       top:100%;
-      right:15%;
+      right:50px;
       }
    }
 
