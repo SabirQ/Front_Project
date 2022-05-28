@@ -15,7 +15,7 @@ window.onload=function(){
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   const menuBtn=document.querySelector("._menu-btn");
   const closeMenuBtn=document.querySelector(".mobile-menu__container__close__btn");
-  const transparentDiv=document.querySelector(".transparent__body");
+  const transparentDiv=document.getElementById("mobile");
   const mobileMenu=document.querySelector(".mobile-menu");
   const accardions=document.querySelectorAll(".mobile-menu__container__navbar__list__item__sub-list");
   const accardionBtns=document.querySelectorAll(".mobile-menu__container__navbar__list__item__link-btn__btn");
@@ -26,17 +26,17 @@ window.onload=function(){
   const searchBtn=document.querySelector(".extras-search");
   const closeSearchBtn=document.querySelector(".transparent__body__search__close__btn");
   const transparentSearchDiv=document.querySelector(".transparent__body__search");
-
   const closeQuickBtn=document.querySelector(".transparent__body__quick-view__container__close");
   const transparentQuickDiv=document.querySelector(".transparent__body__quick-view");
   const quickContainer=document.querySelector(".transparent__body__quick-view__container");
   const quickBtns=document.querySelectorAll("._quick-btn");
-
   const transparentSearchInput=document.querySelector(".transparent__body__search__input-btn");
   const carouselBtns=document.querySelectorAll("._cus-carousel__icon");
   const carouselContainer=document.querySelector(".main-carousel__container");
   const header = document.querySelector(".custom-header__bottom");
   var sticky = 270;
+  const scrollBtn=document.querySelector("._scroll-button");
+
 
   for (let i = 0; i < quickBtns.length; i++) {
     quickBtns[i].onclick=function(e){
@@ -46,15 +46,23 @@ window.onload=function(){
     }
   }
   
-  // closest.onclick=function(){
-  //   transparentQuickDiv.classList.remove("_opacity-return");
-  //   quickContainer.classList.remove("_transform-translate-y");
-  // }
   if(document.body.contains(document.querySelector(".transparent__body__quick-view__container__close"))){
   closeQuickBtn.onclick=function(){
     transparentQuickDiv.classList.remove("_opacity-return");
     quickContainer.classList.remove("_transform-translate-y");
   }
+}
+function scrollAppear() {
+  if (window.pageYOffset > 550) {
+    scrollBtn.classList.add("_scroll-return");
+  }
+   else {
+    scrollBtn.classList.remove("_scroll-return");
+  }
+};
+
+scrollBtn.onclick=function() {
+  window.scrollTo(0,0);
 }
 
 function stickyHeader() {
@@ -65,7 +73,8 @@ function stickyHeader() {
     header.classList.remove("_sticky");
   }
 };
- window.onscroll = function() {stickyHeader()};
+
+ window.onscroll = function() {stickyHeader(),scrollAppear()};
 
 if(document.body.contains(document.querySelector(".main-carousel__container"))){
   carouselContainer.onmouseenter = function(){

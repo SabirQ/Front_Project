@@ -2214,6 +2214,139 @@ ul {
               .mobile-menu__container__extras__social-media__list__item__link:hover {
                 color: #e3a51e; }
 
+._cart-sidebar {
+  width: fit-content;
+  height: fit-content;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  transform: translateX(120%);
+  transition: all 0.3s linear;
+  width: 375px;
+  height: 100vh; }
+  ._cart-sidebar__container {
+    overflow-y: auto;
+    position: relative;
+    width: 100%;
+    padding: 50px 20px;
+    height: 100vh;
+    background-color: #fff; }
+    ._cart-sidebar__container::-webkit-scrollbar {
+      display: none; }
+    ._cart-sidebar__container {
+      -ms-overflow-style: none;
+      scrollbar-width: none; }
+    ._cart-sidebar__container__close {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: 50px;
+      background-color: #e3a51e;
+      color: #0212a5;
+      right: 100%;
+      top: 0%; }
+      ._cart-sidebar__container__close__btn {
+        width: 20px;
+        height: 20px;
+        background-color: transparent; }
+    ._cart-sidebar__container__products {
+      padding-right: 15px; }
+      ._cart-sidebar__container__products__selected {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #dfdede;
+        display: flex; }
+        ._cart-sidebar__container__products__selected__image {
+          width: 85px;
+          border: 1px solid #dfdede; }
+          ._cart-sidebar__container__products__selected__image__img {
+            width: 83px;
+            object-fit: fill;
+            cursor: pointer; }
+        ._cart-sidebar__container__products__selected__info {
+          padding-left: 10px; }
+          ._cart-sidebar__container__products__selected__info__title {
+            transition: all 0.3s linear;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+            color: #333333;
+            font-weight: 500;
+            padding-bottom: 10px;
+            display: block;
+            line-height: 1.5; }
+          ._cart-sidebar__container__products__selected__info__price__count {
+            font-size: 14px; }
+          ._cart-sidebar__container__products__selected__info__price__static {
+            font-size: 10px;
+            font-weight: 400; }
+          ._cart-sidebar__container__products__selected__info__price__value {
+            font-size: 14px;
+            color: #e3a51e; }
+        ._cart-sidebar__container__products__selected__delete {
+          min-width: 30px;
+          text-align: center;
+          font-size: 18px;
+          color: #333333;
+          font-weight: 400;
+          transition: all 0.3s linear;
+          background-color: transparent; }
+          ._cart-sidebar__container__products__selected__delete:hover {
+            color: #e3a51e; }
+    ._cart-sidebar__container__total-box {
+      border-bottom: 1px solid #dfdede;
+      padding-right: 15px;
+      padding-top: 15px;
+      padding-bottom: 20px;
+      margin-bottom: 20px; }
+      ._cart-sidebar__container__total-box__prices {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px; }
+        ._cart-sidebar__container__total-box__prices:last-child {
+          margin-bottom: 0; }
+          ._cart-sidebar__container__total-box__prices:last-child span {
+            font-size: 16px; }
+        ._cart-sidebar__container__total-box__prices__static {
+          font-size: 14px;
+          color: #333333; }
+        ._cart-sidebar__container__total-box__prices__sub-total {
+          font-size: 14px;
+          color: #e3a51e; }
+        ._cart-sidebar__container__total-box__prices__eco-tax {
+          font-size: 14px;
+          color: #e3a51e; }
+        ._cart-sidebar__container__total-box__prices__vat {
+          font-size: 14px;
+          color: #e3a51e; }
+        ._cart-sidebar__container__total-box__prices__total {
+          font-size: 16px;
+          color: #e3a51e; }
+    ._cart-sidebar__container__buttons {
+      padding-right: 15px;
+      padding-top: 15px;
+      padding-bottom: 20px;
+      margin-bottom: 20px; }
+      ._cart-sidebar__container__buttons__btn {
+        width: 100%;
+        background-color: #333333;
+        border-radius: 30px;
+        margin-bottom: 10px;
+        transition: all 0.3s linear;
+        height: 47px; }
+        ._cart-sidebar__container__buttons__btn:hover {
+          background-color: #e3a51e; }
+        ._cart-sidebar__container__buttons__btn a {
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: 500;
+          color: white; }
+          ._cart-sidebar__container__buttons__btn a i {
+            font-size: 12px; }
+
 .x-icon {
   width: 100%;
   height: 100%;
@@ -2249,6 +2382,17 @@ ul {
   ._x-rotate-all:hover span {
     transform: rotate(-90deg); }
 
+._x-rotate-all__cart {
+  transform: rotate(-45deg); }
+  ._x-rotate-all__cart .x-icon__vr {
+    width: 2px;
+    background-color: #fff; }
+  ._x-rotate-all__cart .x-icon__hr {
+    height: 2px;
+    background-color: #fff; }
+  ._x-rotate-all__cart:hover span {
+    transform: rotate(180deg); }
+
 ._x-rotate-all-reverse {
   transform: rotate(45deg); }
   ._x-rotate-all-reverse .x-icon__vr {
@@ -2265,6 +2409,12 @@ ul {
   transition: all 0.3s linear !important;
   opacity: 1 !important; }
 
+._scroll-return {
+  transform: translateY(0px) !important;
+  visibility: visible !important;
+  transition: all 0.3s linear !important;
+  opacity: 1 !important; }
+
 ._custom-accordion {
   visibility: visible !important;
   height: fit-content !important;
@@ -2277,6 +2427,24 @@ ul {
 .mobile-menu__container__navbar {
   -ms-overflow-style: none;
   scrollbar-width: none; }
+
+._scroll-button {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+  transform: translateY(120px);
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  z-index: 5; }
+  ._scroll-button__btn {
+    transition: all 0.3s linear;
+    background-color: #e3a51e;
+    color: white;
+    z-index: 5;
+    height: 40px;
+    width: 40px;
+    border-radius: 5px; }
 
 .main-carousel__container {
   overflow: hidden;
