@@ -25,11 +25,24 @@ const decreaseItemCount = (id) => {
         return item;
       }
     })
-    // .filter(Boolean);
+    .filter(Boolean);
 
   localStorage.setItem("items", JSON.stringify(items));
 
   renderContent();
+  renderContentSidebar();
+};
+const deleteItemCount = (id) => {
+  let items = itemParser();
+
+  items = items
+    .filter(item => item.item.id !== id)
+    
+
+  localStorage.setItem("items", JSON.stringify(items));
+
+  renderContent();
+  renderContentSidebar();
 };
 
 const increaseItemCount = (id) => {
@@ -51,6 +64,7 @@ const increaseItemCount = (id) => {
   localStorage.setItem("items", JSON.stringify(items));
 
   renderContent();
+  renderContentSidebar();
 };
 
 
@@ -129,7 +143,7 @@ const renderContent = () => {
      </span>
  </td>
  <td class="cart__container__row__column__cus-table__table__body__row__delete">
-     <button class="cart__container__row__column__cus-table__table__body__row__delete__btn">
+     <button class="cart__container__row__column__cus-table__table__body__row__delete__btn" onclick="deleteItemCount('${item.item.id}')">
          <i class="fa-regular fa-trash-can"></i>
      </button>
  </td>
@@ -142,7 +156,8 @@ const renderContent = () => {
 
     // totalPriceContainer.innerHTML = `${totalPrice} AZN`;
   } else {
-    container.innerHTML = "Your basket is empty";
+    container.innerHTML = "";
+    
     // totalPriceContainer.innerHTML = ``;
   }
 };

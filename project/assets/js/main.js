@@ -366,6 +366,7 @@ $(".image-zoom")
         
           localStorage.setItem("items", JSON.stringify(items));
           console.log(items);
+          renderContentSidebar();
         }
         
   }

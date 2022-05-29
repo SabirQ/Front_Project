@@ -29,8 +29,21 @@ const subtotalSideDiv=document.querySelector("._cart-sidebar__container__total-b
 const ecoSideDiv=document.querySelector("._cart-sidebar__container__total-box__prices__eco-tax");
 const totalSideDiv=document.querySelector("._cart-sidebar__container__total-box__prices__total");
 const vatSideDiv=document.querySelector("._cart-sidebar__container__total-box__prices__vat");
+const notification=document.querySelectorAll(".extras-notifications");
 
+const deleteItem = (id) => {
+ let items= localStorage.getItem("items")
+  ? JSON.parse(localStorage.getItem("items"))
+  : [];
 
+  items = items
+    .filter(item => item.item.id !== id)
+    
+  localStorage.setItem("items", JSON.stringify(items));
+
+  renderContentSidebar();
+  renderContent();
+};
 const itemParserSidebar = () =>
   localStorage.getItem("items")
     ? JSON.parse(localStorage.getItem("items"))
@@ -46,6 +59,10 @@ const renderContentSidebar = () => {
      let shipside=0;
     let totalside = 0;
     let subtotalside=0;
+    for (let i=0;i<notification.length;i++){
+      notification[i].innerHTML=items.length;
+      notification[i].style.display="inline";
+    }
     items.forEach((item) => {
       subtotalrowside=item.count*item.item.price;
       subtotalside+=subtotalrowside;
@@ -74,7 +91,7 @@ sidebar.insertAdjacentHTML('afterbegin',` <div class="_cart-sidebar__container__
         <span class="_cart-sidebar__container__products__selected__info__price__value">$${item.item.price}</span>
     </div>
 </div>
-<button class="_cart-sidebar__container__products__selected__delete">
+<button class="_cart-sidebar__container__products__selected__delete" onclick="deleteItem('${item.item.id}')">
     <i class="fa-solid fa-xmark"></i>
 </button>
 </div>`)
@@ -86,6 +103,9 @@ sidebar.insertAdjacentHTML('afterbegin',` <div class="_cart-sidebar__container__
 
     // totalPriceContainer.innerHTML = `${totalPrice} AZN`;
   } else {
+    for (let i=0;i<notification.length;i++){
+      notification[i].style.display="none";
+    }
     sidebar.innerHTML = "Your basket is empty";
     // totalPriceContainer.innerHTML = ``;
   }
