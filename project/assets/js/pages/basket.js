@@ -156,6 +156,9 @@ const renderContent = () => {
 
     // totalPriceContainer.innerHTML = `${totalPrice} AZN`;
   } else {
+    shippingDiv.innerHTML="$0";
+    subtotalDiv.innerHTML="$0";
+    totalDiv.innerHTML="$0";
     container.innerHTML = "";
     
     // totalPriceContainer.innerHTML = ``;

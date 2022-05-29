@@ -42,6 +42,7 @@ const deleteItem = (id) => {
   localStorage.setItem("items", JSON.stringify(items));
 
   renderContentSidebar();
+  renderContent();
 };
 const itemParserSidebar = () =>
   localStorage.getItem("items")
@@ -59,6 +60,7 @@ const renderContentSidebar = () => {
     let totalside = 0;
     let subtotalside=0;
     let quantity=0;
+   
     items.forEach((item) => {
       
       quantity+=item.count;
