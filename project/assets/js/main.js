@@ -285,4 +285,87 @@ $(".image-zoom")
       });
   });
 
- 
+  
+  
+  
+  
+  const pricePro=document.querySelectorAll("._price-pro > span");
+  const namePro=document.querySelectorAll("._name-pro");
+  const imgPro=document.querySelectorAll("._img-pro");
+  const btnPro=document.querySelectorAll("._btn-pro");
+  
+  
+  
+  // const itemcount = document.querySelector("#itemscount");
+  
+  // (() => {
+  //   const items = localStorage.getItem("items")
+  //     ? JSON.parse(localStorage.getItem("items"))
+  //     : [];
+  
+  //   if (items.length > 0) {
+  //     const countspan = document.createElement("span");
+  //     countspan.innerHTML = items.length;
+  
+  //     itemcount.appendChild(countspan);
+  
+  //     items.forEach((item) => {
+  //       const icon = document.querySelector(`#${item.id} > i`);
+  //     });
+  //   }
+  // })();
+  
+  // function addBasket(id, img, title, price)
+  
+  for(let i=0; i<btnPro.length ;i++){
+      btnPro[i].onclick=function(){
+          price=parseFloat(pricePro[i].innerText)
+          name=namePro[i].innerText.toString();
+          // const span =
+          //   document.querySelector("#itemscount > span") ??
+          //   document.createElement("span");
+          let items = localStorage.getItem("items")
+            ? JSON.parse(localStorage.getItem("items"))
+            : [];
+        
+          if (items.length > 0) {
+            if (items.some((item) => item.item.id === btnPro[i].id)) {
+              items = items.filter((item) => item.id !== btnPro[i].id);
+              
+            } else {
+              items.push({
+                item: {
+                  id:btnPro[i].id,
+                  img: `${imgPro[i].src}`,
+                  title:`${name}`,
+                  price:`${price}`
+                },
+                count: 1,
+              });
+            }
+          } else {
+            items.push({
+              item: {
+                id:btnPro[i].id,
+                img: `${imgPro[i].src}`,
+                title:`${name}`,
+                price:`${price}`
+              },
+              count: 1,
+            });
+        
+  
+          //   itemcount.appendChild(span);
+          }
+        
+          // if (items.length === 0) {
+          //   itemcount.removeChild(span);
+          // } else {
+          //   span.innerHTML = items.length;
+          // }
+        
+          localStorage.setItem("items", JSON.stringify(items));
+          console.log(items);
+        }
+        
+  }
