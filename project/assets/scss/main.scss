@@ -1322,9 +1322,11 @@ display: flex;
               height: 100%;
               overflow: hidden;
               img{
+
                 width: 100%;
                 height: 100%;
                 object-position: center center;
+                object-fit: cover;
 
               }
               &__caption{
@@ -1697,6 +1699,12 @@ display: flex;
 }
 
 .main-products{
+
+  padding-top:80px;
+  @media (max-width:768){
+    padding-top: 62px;
+  }
+  padding-bottom:20px;
   &__container{
    @include containerResponse;
     &__row{
@@ -2118,6 +2126,10 @@ display: flex;
  }
 
 .main-blogs{
+  padding-top:80px;
+  @media (max-width:768){
+    padding-top: 62px;
+  }
   &__container{
     @include containerResponse;
     &__row{
@@ -2138,12 +2150,21 @@ display: flex;
           padding: 0 15px !important;
           @include columnPadding;
           .item{
+            @media (max-width:476px){
+              width: 100%;
+
+            }
             ._logo{
+              @media (max-width:476px){
+                margin: 0 auto;
+  
+              }
               width: fit-content;
               height: fit-content;
               &__img{
               opacity: 0.3;
               transition: all 0.3s linear;
+              
               &:hover{
                 opacity: 1;
                 cursor: pointer;
