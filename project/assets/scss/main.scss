@@ -514,7 +514,7 @@ display: flex;
   left: 0;
   background-color:$transparent;
   position: fixed;
-  cursor: crosshair;
+  cursor: url('https://htmldemo.net/juan/juan/assets/img/icon/cancel.png'), auto;	
 }
 ._transform-xy-search{
   transform: translate(-50%, -50%) !important;

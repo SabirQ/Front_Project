@@ -2002,7 +2002,7 @@ ul {
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
-  cursor: crosshair; }
+  cursor: url("https://htmldemo.net/juan/juan/assets/img/icon/cancel.png"), auto; }
 
 ._transform-xy-search {
   transform: translate(-50%, -50%) !important; }
