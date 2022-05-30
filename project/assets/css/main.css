@@ -2414,7 +2414,14 @@ ul {
         height: 20px;
         background-color: transparent; }
     ._cart-sidebar__container__products {
+      max-height: 55vh;
+      overflow-y: auto;
       padding-right: 15px; }
+      ._cart-sidebar__container__products::-webkit-scrollbar {
+        display: none; }
+      ._cart-sidebar__container__products {
+        -ms-overflow-style: none;
+        scrollbar-width: none; }
       ._cart-sidebar__container__products__selected {
         padding-bottom: 20px;
         margin-bottom: 20px;
@@ -2875,13 +2882,13 @@ ul {
       visibility: visible;
       transition: all 0.3s linear;
       top: 100%;
-      left: 50px; }
+      transform: translate(-85px, -50%); }
     .product-prototype:hover .product-prototype__buttons__btn-view {
       opacity: 1;
       visibility: visible;
       transition: all 0.3s linear;
       top: 100%;
-      right: 50px; }
+      transform: translate(85px, -50%); }
   .product-prototype__image {
     overflow: hidden;
     max-width: 100%;

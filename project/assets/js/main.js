@@ -36,6 +36,23 @@ window.onload=function(){
   const header = document.querySelector(".custom-header__bottom");
   var sticky = 270;
   const scrollBtn=document.querySelector("._scroll-button");
+  var resultQuick=true;
+  
+quickContainer.onmouseenter=function(){
+  resultQuick=false;
+  
+}
+quickContainer.onmouseleave=function(){
+  resultQuick=true;
+  
+}
+
+transparentQuickDiv.onclick=function(){
+  if(resultQuick){
+    transparentQuickDiv.classList.remove("_opacity-return");
+    quickContainer.classList.remove("_transform-translate-y");
+  }
+};
 
 
   for (let i = 0; i < quickBtns.length; i++) {
